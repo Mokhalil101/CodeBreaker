@@ -1,0 +1,5201 @@
+[
+ {
+  "t": "po",
+  "topic": "variables",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "x = 10\nx += 5\nprint(x)",
+  "o": [
+   "10",
+   "15",
+   "5",
+   "Error"
+  ],
+  "a": "15",
+  "e": "x starts at 10. The += operator adds 5 to it, so x becomes 15.",
+  "h": "Look at x after the +=.",
+  "id": "PY-001"
+ },
+ {
+  "t": "fb",
+  "topic": "syntax",
+  "d": "easy",
+  "q": "The security check crashes. What is wrong?",
+  "code": "if health > 0\n    print(\"RUN\")",
+  "o": [
+   "Missing colon after the condition",
+   "Wrong indentation",
+   "print needs a semicolon",
+   "health must be a string"
+  ],
+  "a": "Missing colon after the condition",
+  "e": "In Python, if/for/while/def lines must end with a colon (:).",
+  "h": "Check the end of the first line.",
+  "id": "PY-002"
+ },
+ {
+  "t": "cc",
+  "topic": "loops",
+  "d": "easy",
+  "q": "Fill the blank so the loop prints 0 1 2 3 4.",
+  "code": "for i in range(____):\n    print(i)",
+  "o": [
+   "4",
+   "5",
+   "6",
+   "0"
+  ],
+  "a": "5",
+  "e": "range(5) produces 0,1,2,3,4 — the stop value is excluded.",
+  "h": "The stop value is not included.",
+  "id": "PY-003"
+ },
+ {
+  "t": "lp",
+  "topic": "conditions",
+  "d": "easy",
+  "q": "Which function gets called?",
+  "code": "energy = 80\nif energy >= 50:\n    activate_bridge()\nelse:\n    disable_bridge()",
+  "o": [
+   "activate_bridge()",
+   "disable_bridge()",
+   "Both",
+   "Neither"
+  ],
+  "a": "activate_bridge()",
+  "e": "80 >= 50 is True, so the if-branch runs and the else-branch is skipped.",
+  "h": "Is 80 at least 50?",
+  "id": "PY-004"
+ },
+ {
+  "t": "po",
+  "topic": "data types",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(type(3.0))",
+  "o": [
+   "<class 'float'>",
+   "<class 'int'>",
+   "<class 'str'>",
+   "3.0"
+  ],
+  "a": "<class 'float'>",
+  "e": "A number written with a decimal point is a float, even if it is 3.0.",
+  "h": "Is there a decimal point?",
+  "id": "PY-005"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(7 // 2, 7 % 2)",
+  "o": [
+   "3 1",
+   "3.5 1",
+   "4 0",
+   "3 3"
+  ],
+  "a": "3 1",
+  "e": "// is floor division (7//2 = 3) and % is the remainder (7%2 = 1).",
+  "h": "Integer division and remainder.",
+  "id": "PY-006"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "name = \"byte\"\nprint(name.upper())",
+  "o": [
+   "BYTE",
+   "byte",
+   "Byte",
+   "Error"
+  ],
+  "a": "BYTE",
+  "e": "str.upper() returns an uppercase copy of the string.",
+  "h": "upper() changes case.",
+  "id": "PY-007"
+ },
+ {
+  "t": "fb",
+  "topic": "indentation",
+  "d": "easy",
+  "q": "This loop raises an error. Why?",
+  "code": "for i in range(3):\nprint(i)",
+  "o": [
+   "The loop body is not indented",
+   "range needs 4 arguments",
+   "print is not a function",
+   "i is undefined"
+  ],
+  "a": "The loop body is not indented",
+  "e": "Python uses indentation to mark the loop body; this raises IndentationError.",
+  "h": "Look at the second line.",
+  "id": "PY-008"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(\"5\" + \"3\")",
+  "o": [
+   "53",
+   "8",
+   "\"53\"",
+   "Error"
+  ],
+  "a": "53",
+  "e": "+ joins two strings (concatenation). It does not add numbers.",
+  "h": "Those are strings, not numbers.",
+  "id": "PY-009"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 6.",
+  "code": "speed = 3\nspeed ____ 2\nprint(speed)",
+  "o": [
+   "*=",
+   "+=",
+   "**=",
+   "//="
+  ],
+  "a": "*=",
+  "e": "3 *= 2 gives 6. += gives 5, **= gives 9, //= gives 1.",
+  "h": "3 and 2 should give 6.",
+  "id": "PY-010"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(not (2 > 3))",
+  "o": [
+   "True",
+   "False",
+   "None",
+   "Error"
+  ],
+  "a": "True",
+  "e": "2 > 3 is False, and not False is True.",
+  "h": "Evaluate the inside first.",
+  "id": "PY-011"
+ },
+ {
+  "t": "po",
+  "topic": "functions",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(len(\"neon\"))",
+  "o": [
+   "4",
+   "3",
+   "5",
+   "neon"
+  ],
+  "a": "4",
+  "e": "len() counts characters: n-e-o-n = 4.",
+  "h": "Count the letters.",
+  "id": "PY-012"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(2 ** 3)",
+  "o": [
+   "8",
+   "6",
+   "9",
+   "5"
+  ],
+  "a": "8",
+  "e": "** is exponentiation: 2 to the power of 3 is 8.",
+  "h": "** is not multiplication.",
+  "id": "PY-013"
+ },
+ {
+  "t": "fb",
+  "topic": "syntax",
+  "d": "easy",
+  "q": "What is wrong with this line?",
+  "code": "print(\"Hello)",
+  "o": [
+   "The string is not closed",
+   "print is misspelled",
+   "Missing colon",
+   "Needs import"
+  ],
+  "a": "The string is not closed",
+  "e": "The opening quote has no matching closing quote, which is a SyntaxError.",
+  "h": "Count the quotation marks.",
+  "id": "PY-014"
+ },
+ {
+  "t": "po",
+  "topic": "if / else",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "x = 7\nif x % 2 == 0:\n    print(\"even\")\nelse:\n    print(\"odd\")",
+  "o": [
+   "odd",
+   "even",
+   "7",
+   "Error"
+  ],
+  "a": "odd",
+  "e": "7 % 2 is 1, not 0, so the condition is False and the else-branch runs.",
+  "h": "What is the remainder of 7 / 2?",
+  "id": "PY-015"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "i = 0\nwhile i < 3:\n    i += 1\nprint(i)",
+  "o": [
+   "3",
+   "2",
+   "0",
+   "Infinite loop"
+  ],
+  "a": "3",
+  "e": "The loop adds 1 until i < 3 is False. That happens when i reaches 3.",
+  "h": "When does the loop stop?",
+  "id": "PY-016"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "nums = [4, 8, 15]\nprint(nums[1])",
+  "o": [
+   "8",
+   "4",
+   "15",
+   "Error"
+  ],
+  "a": "8",
+  "e": "List indexes start at 0, so nums[1] is the second item: 8.",
+  "h": "Indexing starts at 0.",
+  "id": "PY-017"
+ },
+ {
+  "t": "po",
+  "topic": "slicing",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print([1, 2, 3, 4][1:3])",
+  "o": [
+   "[2, 3]",
+   "[1, 2, 3]",
+   "[2, 3, 4]",
+   "[1, 2]"
+  ],
+  "a": "[2, 3]",
+  "e": "A slice [1:3] includes index 1 and 2 but stops before index 3.",
+  "h": "The end index is excluded.",
+  "id": "PY-018"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"hp\": 3}\nd[\"hp\"] += 2\nprint(d[\"hp\"])",
+  "o": [
+   "5",
+   "3",
+   "2",
+   "Error"
+  ],
+  "a": "5",
+  "e": "d[\"hp\"] starts at 3, and += 2 updates it to 5.",
+  "h": "The value is updated in place.",
+  "id": "PY-019"
+ },
+ {
+  "t": "cc",
+  "topic": "functions",
+  "d": "medium",
+  "q": "Fill the blank so double(4) gives 8 to the caller.",
+  "code": "def double(n):\n    ____ n * 2",
+  "o": [
+   "return",
+   "print",
+   "yield",
+   "def"
+  ],
+  "a": "return",
+  "e": "return sends the value back to the caller. print only shows it and the function returns None.",
+  "h": "The result must go back to the caller.",
+  "id": "PY-020"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "What happens when this code runs?",
+  "code": "nums = [1, 2, 3]\nprint(nums[3])",
+  "o": [
+   "IndexError: index out of range",
+   "SyntaxError: missing colon",
+   "NameError: nums not defined",
+   "It prints 3"
+  ],
+  "a": "IndexError: index out of range",
+  "e": "Valid indexes are 0, 1 and 2. Index 3 does not exist, so Python raises IndexError.",
+  "h": "How many items does the list have?",
+  "id": "PY-021"
+ },
+ {
+  "t": "lp",
+  "topic": "conditions",
+  "d": "easy",
+  "q": "Which function gets called?",
+  "code": "key_found = False\nif key_found:\n    open_door()\nelse:\n    show_locked()",
+  "o": [
+   "show_locked()",
+   "open_door()",
+   "Both",
+   "Neither"
+  ],
+  "a": "show_locked()",
+  "e": "key_found is False, so the else-branch runs.",
+  "h": "Is the condition True?",
+  "id": "PY-022"
+ },
+ {
+  "t": "po",
+  "topic": "break",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "for i in range(5):\n    if i == 3:\n        break\n    print(i, end=\" \")",
+  "o": [
+   "0 1 2",
+   "0 1 2 3",
+   "3",
+   "0 1 2 3 4"
+  ],
+  "a": "0 1 2",
+  "e": "The loop stops completely when i is 3, before printing it.",
+  "h": "break exits the loop immediately.",
+  "id": "PY-023"
+ },
+ {
+  "t": "cc",
+  "topic": "loops",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 6.",
+  "code": "total = 0\nfor n in [1, 2, 3]:\n    total ____ n\nprint(total)",
+  "o": [
+   "+=",
+   "=",
+   "-=",
+   "*="
+  ],
+  "a": "+=",
+  "e": "+= accumulates 1 + 2 + 3 = 6. Plain = would keep only the last value.",
+  "h": "We need a running sum.",
+  "id": "PY-024"
+ },
+ {
+  "t": "po",
+  "topic": "range",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print(list(range(2, 10, 3)))",
+  "o": [
+   "[2, 5, 8]",
+   "[2, 5, 8, 11]",
+   "[3, 6, 9]",
+   "[2, 3, 4]"
+  ],
+  "a": "[2, 5, 8]",
+  "e": "range(start, stop, step): 2, 5, 8, and 11 is past the stop value 10.",
+  "h": "The third argument is the step.",
+  "id": "PY-025"
+ },
+ {
+  "t": "fb",
+  "topic": "conditions",
+  "d": "medium",
+  "q": "What is wrong with this condition?",
+  "code": "x = 5\nif x = 5:\n    print(\"yes\")",
+  "o": [
+   "It uses = instead of ==",
+   "Missing colon",
+   "x must be a string",
+   "print needs return"
+  ],
+  "a": "It uses = instead of ==",
+  "e": "= assigns a value, == compares. A condition needs the comparison operator ==.",
+  "h": "Assignment versus comparison.",
+  "id": "PY-026"
+ },
+ {
+  "w": 3,
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "data = {\"a\": 1, \"b\": 2}\nprint(list(data.keys()))",
+  "o": [
+   "['a', 'b']",
+   "[1, 2]",
+   "['a', 1]",
+   "Error"
+  ],
+  "a": "['a', 'b']",
+  "e": "dict.keys() returns the keys, and list() turns them into a list.",
+  "h": "Keys, not values.",
+  "id": "PY-027"
+ },
+ {
+  "w": 3,
+  "t": "po",
+  "topic": "lists",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "words = [\"ram\", \"disk\"]\nwords.append(\"cpu\")\nprint(len(words))",
+  "o": [
+   "3",
+   "2",
+   "4",
+   "Error"
+  ],
+  "a": "3",
+  "e": "append() adds one item at the end, so the list now has 3 items.",
+  "h": "How many items after append?",
+  "id": "PY-028"
+ },
+ {
+  "w": 3,
+  "t": "po",
+  "topic": "tuples",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "t = (1, 2, 3)\nprint(t[-1])",
+  "o": [
+   "3",
+   "1",
+   "2",
+   "Error"
+  ],
+  "a": "3",
+  "e": "Negative indexes count from the end: -1 is the last item.",
+  "h": "-1 is the last item.",
+  "id": "PY-029"
+ },
+ {
+  "w": 3,
+  "t": "po",
+  "topic": "sets",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = {1, 2, 2, 3}\nprint(len(s))",
+  "o": [
+   "3",
+   "4",
+   "2",
+   "Error"
+  ],
+  "a": "3",
+  "e": "A set keeps only unique values, so the duplicate 2 is stored once.",
+  "h": "Sets remove duplicates.",
+  "id": "PY-030"
+ },
+ {
+  "w": 3,
+  "t": "fb",
+  "topic": "tuples",
+  "d": "medium",
+  "q": "What goes wrong when this code runs?",
+  "code": "t = (1, 2, 3)\nt[0] = 9",
+  "o": [
+   "TypeError: tuples are immutable",
+   "IndexError",
+   "SyntaxError",
+   "NameError"
+  ],
+  "a": "TypeError: tuples are immutable",
+  "e": "Tuples cannot be changed after creation, so assigning to an item raises TypeError.",
+  "h": "Can a tuple be modified?",
+  "id": "PY-031"
+ },
+ {
+  "w": 3,
+  "t": "cc",
+  "topic": "functions",
+  "d": "medium",
+  "q": "Fill the blank so the program prints 5.",
+  "code": "def add(a, b):\n    return ____\nprint(add(2, 3))",
+  "o": [
+   "a + b",
+   "a - b",
+   "a * b",
+   "print(a)"
+  ],
+  "a": "a + b",
+  "e": "add(2, 3) must return 2 + 3 = 5, so the function returns a + b.",
+  "h": "We want the sum.",
+  "id": "PY-032"
+ },
+ {
+  "w": 3,
+  "t": "po",
+  "topic": "scope",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "x = 5\ndef f():\n    x = 10\nf()\nprint(x)",
+  "o": [
+   "5",
+   "10",
+   "None",
+   "Error"
+  ],
+  "a": "5",
+  "e": "The x inside f() is a separate local variable. The global x stays 5.",
+  "h": "Local versus global scope.",
+  "id": "PY-033"
+ },
+ {
+  "w": 3,
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(\"data core\"[0:4])",
+  "o": [
+   "data",
+   "core",
+   "data ",
+   "Error"
+  ],
+  "a": "data",
+  "e": "The slice [0:4] takes characters at indexes 0 to 3: d-a-t-a.",
+  "h": "The end index is excluded.",
+  "id": "PY-034"
+ },
+ {
+  "w": 4,
+  "t": "lp",
+  "topic": "DNS",
+  "d": "easy",
+  "q": "Which protocol translates a domain name like example.com into an IP address?",
+  "code": "",
+  "o": [
+   "DNS",
+   "HTTP",
+   "TCP",
+   "UDP"
+  ],
+  "a": "DNS",
+  "e": "DNS (Domain Name System) maps human-readable names to IP addresses.",
+  "h": "It works like a phone book.",
+  "id": "PY-035"
+ },
+ {
+  "w": 4,
+  "t": "lp",
+  "topic": "TCP",
+  "d": "easy",
+  "q": "Which transport protocol guarantees ordered, reliable delivery?",
+  "code": "",
+  "o": [
+   "TCP",
+   "UDP",
+   "DNS",
+   "ICMP"
+  ],
+  "a": "TCP",
+  "e": "TCP uses acknowledgements and retransmission to make delivery reliable and ordered.",
+  "h": "Think connection-oriented.",
+  "id": "PY-036"
+ },
+ {
+  "w": 4,
+  "t": "lp",
+  "topic": "UDP",
+  "d": "medium",
+  "q": "Which transport protocol is faster but does NOT guarantee delivery?",
+  "code": "",
+  "o": [
+   "UDP",
+   "TCP",
+   "HTTP",
+   "DNS"
+  ],
+  "a": "UDP",
+  "e": "UDP skips handshakes and retransmission, so it is faster but may lose packets.",
+  "h": "Used for video calls and games.",
+  "id": "PY-037"
+ },
+ {
+  "w": 4,
+  "t": "lp",
+  "topic": "OSI model",
+  "d": "medium",
+  "q": "Which OSI layer handles IP addressing and routing?",
+  "code": "",
+  "o": [
+   "Network (Layer 3)",
+   "Physical (Layer 1)",
+   "Transport (Layer 4)",
+   "Application (Layer 7)"
+  ],
+  "a": "Network (Layer 3)",
+  "e": "The Network layer (Layer 3) uses IP addresses to route packets between networks.",
+  "h": "Routers work here.",
+  "id": "PY-038"
+ },
+ {
+  "w": 4,
+  "t": "lp",
+  "topic": "HTTP",
+  "d": "easy",
+  "q": "An HTTP response returns status 404. What does it mean?",
+  "code": "",
+  "o": [
+   "Resource not found",
+   "Server error",
+   "Success",
+   "Redirect"
+  ],
+  "a": "Resource not found",
+  "e": "404 means the server could not find the requested resource.",
+  "h": "The page is missing.",
+  "id": "PY-039"
+ },
+ {
+  "w": 4,
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "ip = \"192.168.1.10\"\nprint(ip.split(\".\")[0])",
+  "o": [
+   "192",
+   "168",
+   "10",
+   "Error"
+  ],
+  "a": "192",
+  "e": "split(\".\") breaks the string at each dot. Index 0 is the first part, 192.",
+  "h": "Index 0 is the first part.",
+  "id": "PY-040"
+ },
+ {
+  "w": 4,
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "parts = \"10.0.0.1\".split(\".\")\nprint(len(parts))",
+  "o": [
+   "4",
+   "3",
+   "8",
+   "1"
+  ],
+  "a": "4",
+  "e": "An IPv4 address has 4 parts separated by dots, so the list has 4 items.",
+  "h": "Count the numbers.",
+  "id": "PY-041"
+ },
+ {
+  "w": 5,
+  "t": "po",
+  "topic": "sorting",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "nums = [3, 1, 2]\nnums.sort()\nprint(nums)",
+  "o": [
+   "[1, 2, 3]",
+   "[3, 2, 1]",
+   "[3, 1, 2]",
+   "None"
+  ],
+  "a": "[1, 2, 3]",
+  "e": "list.sort() sorts the list in place in ascending order.",
+  "h": "Ascending order by default.",
+  "id": "PY-042"
+ },
+ {
+  "w": 5,
+  "t": "po",
+  "topic": "linear search",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "data = [4, 7, 9]\nidx = -1\nfor i in range(len(data)):\n    if data[i] == 9:\n        idx = i\nprint(idx)",
+  "o": [
+   "2",
+   "9",
+   "-1",
+   "3"
+  ],
+  "a": "2",
+  "e": "Linear search checks each item. 9 is found at index 2, so idx becomes 2.",
+  "h": "We store the index, not the value.",
+  "id": "PY-043"
+ },
+ {
+  "w": 5,
+  "t": "lp",
+  "topic": "binary search",
+  "d": "medium",
+  "q": "In a sorted list of 1000 items, which search is much faster?",
+  "code": "",
+  "o": [
+   "Binary search",
+   "Linear search",
+   "Bubble sort",
+   "Selection sort"
+  ],
+  "a": "Binary search",
+  "e": "Binary search halves the search range each step, needing about 10 steps for 1000 items.",
+  "h": "It needs sorted data.",
+  "id": "PY-044"
+ },
+ {
+  "w": 5,
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def f(n):\n    if n == 0:\n        return 0\n    return n + f(n - 1)\nprint(f(3))",
+  "o": [
+   "6",
+   "3",
+   "0",
+   "Infinite recursion"
+  ],
+  "a": "6",
+  "e": "f(3) = 3 + f(2) = 3 + 2 + f(1) = 3 + 2 + 1 + f(0) = 6.",
+  "h": "Add 3 + 2 + 1 + 0.",
+  "id": "PY-045"
+ },
+ {
+  "w": 5,
+  "t": "cc",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "Choose the base case so fact(n) computes the factorial.",
+  "code": "def fact(n):\n    if n == ____:\n        return 1\n    return n * fact(n - 1)",
+  "o": [
+   "0",
+   "2",
+   "-1",
+   "10"
+  ],
+  "a": "0",
+  "e": "The base case stops the recursion. fact(0) is 1 by definition.",
+  "h": "Where should the recursion stop?",
+  "id": "PY-046"
+ },
+ {
+  "w": 5,
+  "t": "po",
+  "topic": "bubble sort",
+  "d": "hard",
+  "q": "What will this code print after one pass?",
+  "code": "a = [3, 1, 2]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "o": [
+   "[1, 2, 3]",
+   "[1, 3, 2]",
+   "[3, 1, 2]",
+   "[2, 1, 3]"
+  ],
+  "a": "[1, 2, 3]",
+  "e": "3 and 1 swap giving [1, 3, 2], then 3 and 2 swap giving [1, 2, 3].",
+  "h": "Trace each comparison.",
+  "id": "PY-047"
+ },
+ {
+  "w": 5,
+  "t": "lp",
+  "topic": "complexity",
+  "d": "medium",
+  "q": "What is the worst-case time complexity of linear search?",
+  "code": "",
+  "o": [
+   "O(n)",
+   "O(1)",
+   "O(log n)",
+   "O(n squared)"
+  ],
+  "a": "O(n)",
+  "e": "In the worst case every one of the n items is checked.",
+  "h": "It may check every item.",
+  "id": "PY-048"
+ },
+ {
+  "w": 5,
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "stack = []\nstack.append(1)\nstack.append(2)\nstack.pop()\nprint(stack)",
+  "o": [
+   "[1]",
+   "[2]",
+   "[1, 2]",
+   "[]"
+  ],
+  "a": "[1]",
+  "e": "A stack is last-in, first-out. pop() removes the last item added (2).",
+  "h": "pop() removes the most recent item.",
+  "id": "PY-049"
+ },
+ {
+  "w": 5,
+  "t": "lp",
+  "topic": "queues",
+  "d": "easy",
+  "q": "Which data structure is first-in, first-out (FIFO)?",
+  "code": "",
+  "o": [
+   "Queue",
+   "Stack",
+   "Tree",
+   "Set"
+  ],
+  "a": "Queue",
+  "e": "A queue serves items in the order they arrived, like a line of people.",
+  "h": "Think of a line at a shop.",
+  "id": "PY-050"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(\"a,b,c\".split(\",\"))",
+  "o": [
+   "['a', 'b', 'c']",
+   "abc",
+   "a b c",
+   "Error"
+  ],
+  "a": "['a', 'b', 'c']",
+  "e": "split() breaks a string at each separator and returns a list.",
+  "h": "The result is a list.",
+  "id": "PY-051"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "x = 3\nprint(f\"x is {x}\")",
+  "o": [
+   "x is 3",
+   "x is {x}",
+   "3",
+   "Error"
+  ],
+  "a": "x is 3",
+  "e": "An f-string replaces {x} with the value of x.",
+  "h": "f-strings insert values.",
+  "id": "PY-052"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print([i * 2 for i in range(3)])",
+  "o": [
+   "[0, 2, 4]",
+   "[2, 4, 6]",
+   "[0, 1, 2]",
+   "[0, 2, 4, 6]"
+  ],
+  "a": "[0, 2, 4]",
+  "e": "range(3) gives 0,1,2 and each value is doubled.",
+  "h": "range(3) starts at 0.",
+  "id": "PY-053"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(10 / 4)",
+  "o": [
+   "2.5",
+   "2",
+   "3",
+   "Error"
+  ],
+  "a": "2.5",
+  "e": "The / operator always returns a float, so 10 / 4 is 2.5.",
+  "h": "/ is true division.",
+  "id": "PY-054"
+ },
+ {
+  "t": "po",
+  "topic": "type conversion",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(int(\"7\") + 1)",
+  "o": [
+   "8",
+   "71",
+   "7",
+   "Error"
+  ],
+  "a": "8",
+  "e": "int(\"7\") converts the string to the number 7, then 1 is added.",
+  "h": "Convert first, then add.",
+  "id": "PY-055"
+ },
+ {
+  "t": "fb",
+  "topic": "type errors",
+  "d": "medium",
+  "q": "What happens when this code runs?",
+  "code": "x = \"5\"\nprint(x + 1)",
+  "o": [
+   "TypeError: cannot add str and int",
+   "SyntaxError",
+   "NameError",
+   "It prints 6"
+  ],
+  "a": "TypeError: cannot add str and int",
+  "e": "Python does not mix a string and an integer with +. Convert one of them first.",
+  "h": "Is \"5\" a number?",
+  "id": "PY-056"
+ },
+ {
+  "t": "po",
+  "topic": "break",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "n = 0\nwhile True:\n    n += 1\n    if n == 4:\n        break\nprint(n)",
+  "o": [
+   "4",
+   "3",
+   "5",
+   "Infinite loop"
+  ],
+  "a": "4",
+  "e": "The loop stops with break as soon as n reaches 4.",
+  "h": "When does break run?",
+  "id": "PY-057"
+ },
+ {
+  "t": "cc",
+  "topic": "functions",
+  "d": "easy",
+  "q": "Fill the built-in function so the code prints 3.",
+  "code": "print(____([\"x\", \"y\", \"z\"]))",
+  "o": [
+   "len",
+   "sum",
+   "max",
+   "print"
+  ],
+  "a": "len",
+  "e": "len() returns the number of items in a list.",
+  "h": "We count the items.",
+  "id": "PY-058"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(\"Py\" in \"Python\")",
+  "o": [
+   "True",
+   "False",
+   "Py",
+   "Error"
+  ],
+  "a": "True",
+  "e": "The in operator checks whether a substring exists. \"Py\" is at the start of \"Python\".",
+  "h": "in checks membership.",
+  "id": "PY-059"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(bool(0), bool(\"a\"))",
+  "o": [
+   "False True",
+   "True True",
+   "False False",
+   "True False"
+  ],
+  "a": "False True",
+  "e": "0 is falsy while a non-empty string is truthy.",
+  "h": "Zero is falsy.",
+  "id": "PY-060"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 1}\nprint(d.get(\"b\", 0))",
+  "o": [
+   "0",
+   "None",
+   "Error",
+   "1"
+  ],
+  "a": "0",
+  "e": "get() returns the default value (0) when the key is missing, instead of raising KeyError.",
+  "h": "The second argument is a default.",
+  "id": "PY-061"
+ },
+ {
+  "t": "po",
+  "topic": "variables",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "a, b = 2, 3\nprint(a * b)",
+  "o": [
+   "6",
+   "5",
+   "23",
+   "Error"
+  ],
+  "a": "6",
+  "e": "Tuple unpacking sets a=2 and b=3, so a * b is 6.",
+  "h": "Multiply the two values.",
+  "id": "PY-062"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "x = 5\nx -= 2\nprint(x)",
+  "o": [
+   "3",
+   "7",
+   "2",
+   "Error"
+  ],
+  "a": "3",
+  "e": "-= subtracts 2 from x, so x becomes 3.",
+  "h": "Subtract.",
+  "id": "PY-063"
+ },
+ {
+  "t": "po",
+  "topic": "data types",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(type(\"5\"))",
+  "o": [
+   "<class 'str'>",
+   "<class 'int'>",
+   "<class 'float'>",
+   "5"
+  ],
+  "a": "<class 'str'>",
+  "e": "Anything inside quotes is a string, even digits.",
+  "h": "Look at the quotes.",
+  "id": "PY-064"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(3 == 3.0)",
+  "o": [
+   "True",
+   "False",
+   "Error",
+   "None"
+  ],
+  "a": "True",
+  "e": "== compares values, and 3 equals 3.0.",
+  "h": "Compare values.",
+  "id": "PY-065"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(9 % 4)",
+  "o": [
+   "1",
+   "2",
+   "0",
+   "5"
+  ],
+  "a": "1",
+  "e": "9 divided by 4 leaves a remainder of 1.",
+  "h": "Remainder.",
+  "id": "PY-066"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "for i in range(1, 4):\n    print(i, end=\" \")",
+  "o": [
+   "1 2 3",
+   "0 1 2 3",
+   "1 2 3 4",
+   "1 2"
+  ],
+  "a": "1 2 3",
+  "e": "range(1, 4) starts at 1 and stops before 4.",
+  "h": "The stop value is excluded.",
+  "id": "PY-067"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "count = 0\nfor c in \"hello\":\n    if c == \"l\":\n        count += 1\nprint(count)",
+  "o": [
+   "2",
+   "1",
+   "3",
+   "0"
+  ],
+  "a": "2",
+  "e": "The letter l appears twice in hello.",
+  "h": "Count the l letters.",
+  "id": "PY-068"
+ },
+ {
+  "t": "po",
+  "topic": "if / else",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = 10\nif x > 5 and x < 8:\n    print(\"A\")\nelif x > 5:\n    print(\"B\")\nelse:\n    print(\"C\")",
+  "o": [
+   "B",
+   "A",
+   "C",
+   "Error"
+  ],
+  "a": "B",
+  "e": "The first condition fails (10 is not below 8), so elif x > 5 runs and prints B.",
+  "h": "Check conditions in order.",
+  "id": "PY-069"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "n = 5\nresult = 1\nwhile n > 0:\n    result *= n\n    n -= 1\nprint(result)",
+  "o": [
+   "120",
+   "24",
+   "5",
+   "0"
+  ],
+  "a": "120",
+  "e": "The loop multiplies 5*4*3*2*1 = 120.",
+  "h": "It builds a factorial.",
+  "id": "PY-070"
+ },
+ {
+  "t": "po",
+  "topic": "slicing",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(\"abc\"[::-1])",
+  "o": [
+   "cba",
+   "abc",
+   "bca",
+   "Error"
+  ],
+  "a": "cba",
+  "e": "A step of -1 walks the string backwards.",
+  "h": "A negative step reverses.",
+  "id": "PY-071"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "a = [1, 2, 3]\nb = a\nb.append(4)\nprint(len(a))",
+  "o": [
+   "4",
+   "3",
+   "1",
+   "Error"
+  ],
+  "a": "4",
+  "e": "b and a refer to the same list, so appending through b changes a too.",
+  "h": "Both names point to one list.",
+  "id": "PY-072"
+ },
+ {
+  "t": "po",
+  "topic": "built-in functions",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "nums = [5, 2, 9]\nprint(max(nums) - min(nums))",
+  "o": [
+   "7",
+   "9",
+   "2",
+   "4"
+  ],
+  "a": "7",
+  "e": "max is 9 and min is 2, so 9 - 2 = 7.",
+  "h": "Largest minus smallest.",
+  "id": "PY-073"
+ },
+ {
+  "t": "po",
+  "topic": "tuples",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "a, b = (1, 2)\na, b = b, a\nprint(a, b)",
+  "o": [
+   "2 1",
+   "1 2",
+   "2 2",
+   "Error"
+  ],
+  "a": "2 1",
+  "e": "The swap exchanges the two values, so a is 2 and b is 1.",
+  "h": "The values are swapped.",
+  "id": "PY-074"
+ },
+ {
+  "t": "po",
+  "topic": "sets",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print({1, 2} | {2, 3})",
+  "o": [
+   "{1, 2, 3}",
+   "{2}",
+   "{1, 3}",
+   "Error"
+  ],
+  "a": "{1, 2, 3}",
+  "e": "The | operator gives the union of two sets.",
+  "h": "Union.",
+  "id": "PY-075"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "d = {\"x\": 1, \"y\": 2}\nfor k in d:\n    print(k, end=\"\")",
+  "o": [
+   "xy",
+   "12",
+   "x1y2",
+   "Error"
+  ],
+  "a": "xy",
+  "e": "Looping over a dict gives its keys.",
+  "h": "Keys, not values.",
+  "id": "PY-076"
+ },
+ {
+  "t": "po",
+  "topic": "functions",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "def add(a, b=10):\n    return a + b\nprint(add(5))",
+  "o": [
+   "15",
+   "5",
+   "10",
+   "Error"
+  ],
+  "a": "15",
+  "e": "b defaults to 10, so add(5) returns 15.",
+  "h": "Default parameter.",
+  "id": "PY-077"
+ },
+ {
+  "t": "po",
+  "topic": "scope",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "def f(x):\n    x = x + 1\n    return x\nn = 4\nf(n)\nprint(n)",
+  "o": [
+   "4",
+   "5",
+   "None",
+   "Error"
+  ],
+  "a": "4",
+  "e": "The function works on its own copy of the number. n stays 4.",
+  "h": "Numbers are not changed in place.",
+  "id": "PY-078"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def f(n):\n    return 1 if n <= 1 else n * f(n - 1)\nprint(f(4))",
+  "o": [
+   "24",
+   "10",
+   "16",
+   "4"
+  ],
+  "a": "24",
+  "e": "f(4) = 4 * 3 * 2 * 1 = 24.",
+  "h": "Factorial.",
+  "w": 5,
+  "id": "PY-079"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def fib(n):\n    return n if n < 2 else fib(n - 1) + fib(n - 2)\nprint(fib(6))",
+  "o": [
+   "8",
+   "5",
+   "13",
+   "6"
+  ],
+  "a": "8",
+  "e": "The sequence is 0,1,1,2,3,5,8 so fib(6) is 8.",
+  "h": "Add the previous two.",
+  "w": 5,
+  "id": "PY-080"
+ },
+ {
+  "t": "po",
+  "topic": "problem solving",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "a = [4, 2, 5, 1]\nm = a[0]\nfor x in a:\n    if x < m:\n        m = x\nprint(m)",
+  "o": [
+   "1",
+   "4",
+   "2",
+   "5"
+  ],
+  "a": "1",
+  "e": "The loop keeps the smallest value seen, which is 1.",
+  "h": "It tracks the minimum.",
+  "w": 5,
+  "id": "PY-081"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "lo, hi = 0, 7\nmid = (lo + hi) // 2\nprint(mid)",
+  "o": [
+   "3",
+   "4",
+   "3.5",
+   "7"
+  ],
+  "a": "3",
+  "e": "(0 + 7) // 2 is 3 because // drops the fraction.",
+  "h": "Floor division.",
+  "w": 5,
+  "id": "PY-082"
+ },
+ {
+  "t": "po",
+  "topic": "queues",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "q = [1, 2, 3]\nq.pop(0)\nprint(q)",
+  "o": [
+   "[2, 3]",
+   "[1, 2]",
+   "[3]",
+   "[1, 2, 3]"
+  ],
+  "a": "[2, 3]",
+  "e": "pop(0) removes the first item, like dequeuing from a queue.",
+  "h": "Index 0 is the front.",
+  "w": 5,
+  "id": "PY-083"
+ },
+ {
+  "t": "fb",
+  "topic": "indentation",
+  "d": "easy",
+  "q": "What is wrong with this code?",
+  "code": "def f(x):\nreturn x * 2",
+  "o": [
+   "The function body is not indented",
+   "Missing colon",
+   "x must be a string",
+   "return is misspelled"
+  ],
+  "a": "The function body is not indented",
+  "e": "The body of a function must be indented.",
+  "h": "Look at line 2.",
+  "id": "PY-084"
+ },
+ {
+  "t": "fb",
+  "topic": "syntax",
+  "d": "easy",
+  "q": "Why does this loop fail?",
+  "code": "nums = [1, 2, 3]\nfor n in nums\n    print(n)",
+  "o": [
+   "The for line is missing a colon",
+   "Wrong indentation",
+   "nums is undefined",
+   "print needs return"
+  ],
+  "a": "The for line is missing a colon",
+  "e": "Every for statement must end with a colon.",
+  "h": "Check the for line.",
+  "id": "PY-085"
+ },
+ {
+  "t": "fb",
+  "topic": "logical errors",
+  "d": "hard",
+  "q": "This should return the average of a and b but gives wrong results. Why?",
+  "code": "def avg(a, b):\n    return a + b / 2",
+  "o": [
+   "Division happens first: use (a + b) / 2",
+   "Missing colon",
+   "Wrong function name",
+   "It needs print"
+  ],
+  "a": "Division happens first: use (a + b) / 2",
+  "e": "Python divides b by 2 first. Parentheses fix the precedence.",
+  "h": "Operator precedence.",
+  "id": "PY-086"
+ },
+ {
+  "t": "fb",
+  "topic": "variable errors",
+  "d": "easy",
+  "q": "What error does this raise?",
+  "code": "total = 5\nprint(totl)",
+  "o": [
+   "NameError: misspelled variable name",
+   "TypeError",
+   "IndexError",
+   "SyntaxError"
+  ],
+  "a": "NameError: misspelled variable name",
+  "e": "totl is not defined, so Python raises NameError.",
+  "h": "Compare the two names.",
+  "id": "PY-087"
+ },
+ {
+  "t": "lp",
+  "topic": "sorting",
+  "d": "easy",
+  "q": "Which sorting algorithm repeatedly swaps adjacent items that are in the wrong order?",
+  "code": "",
+  "o": [
+   "Bubble sort",
+   "Selection sort",
+   "Binary search",
+   "Hash map"
+  ],
+  "a": "Bubble sort",
+  "e": "Bubble sort compares neighbours and swaps them until the list is sorted.",
+  "h": "Items bubble up.",
+  "w": 5,
+  "id": "PY-088"
+ },
+ {
+  "t": "lp",
+  "topic": "hash maps",
+  "d": "medium",
+  "q": "Which data structure gives average O(1) lookup by key?",
+  "code": "",
+  "o": [
+   "Hash map (dict)",
+   "List",
+   "Stack",
+   "Queue"
+  ],
+  "a": "Hash map (dict)",
+  "e": "A hash map jumps straight to a key using its hash value.",
+  "h": "Python dict.",
+  "w": 5,
+  "id": "PY-089"
+ },
+ {
+  "t": "lp",
+  "topic": "HTTP",
+  "d": "easy",
+  "q": "Which protocol loads web pages with encryption?",
+  "code": "",
+  "o": [
+   "HTTPS",
+   "HTTP",
+   "DNS",
+   "UDP"
+  ],
+  "a": "HTTPS",
+  "e": "HTTPS is HTTP protected by TLS encryption.",
+  "h": "Look for the S.",
+  "w": 4,
+  "id": "PY-090"
+ },
+ {
+  "t": "lp",
+  "topic": "IP addressing",
+  "d": "easy",
+  "q": "What does an IP address identify?",
+  "code": "",
+  "o": [
+   "A device on a network",
+   "A website colour",
+   "A file size",
+   "A coding language"
+  ],
+  "a": "A device on a network",
+  "e": "An IP address identifies a device so packets can reach it.",
+  "h": "Think of a postal address.",
+  "w": 4,
+  "id": "PY-091"
+ },
+ {
+  "t": "lp",
+  "topic": "OSI model",
+  "d": "medium",
+  "q": "Which OSI layer does TCP belong to?",
+  "code": "",
+  "o": [
+   "Transport (Layer 4)",
+   "Network (Layer 3)",
+   "Application (Layer 7)",
+   "Physical (Layer 1)"
+  ],
+  "a": "Transport (Layer 4)",
+  "e": "TCP and UDP work at the Transport layer.",
+  "h": "Layer 4.",
+  "w": 4,
+  "id": "PY-092"
+ },
+ {
+  "t": "lp",
+  "topic": "routing",
+  "d": "easy",
+  "q": "What does a router mainly do?",
+  "code": "",
+  "o": [
+   "Forwards packets between networks",
+   "Stores files",
+   "Compiles code",
+   "Draws graphics"
+  ],
+  "a": "Forwards packets between networks",
+  "e": "Routers forward packets towards their destination network.",
+  "h": "Routing means choosing a path.",
+  "w": 4,
+  "id": "PY-093"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "words = [\"b\", \"a\", \"c\"]\nprint(sorted(words))",
+  "o": [
+   "['a', 'b', 'c']",
+   "['b', 'a', 'c']",
+   "['c', 'b', 'a']",
+   "None"
+  ],
+  "a": "['a', 'b', 'c']",
+  "e": "sorted() returns a new list in ascending order.",
+  "h": "Alphabetical order.",
+  "w": 3,
+  "id": "PY-094"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 1, \"b\": 2}\nprint(len(d))",
+  "o": [
+   "2",
+   "1",
+   "3",
+   "Error"
+  ],
+  "a": "2",
+  "e": "len() counts the key-value pairs.",
+  "h": "Two keys.",
+  "w": 3,
+  "id": "PY-095"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "s = \"code breaker\"\nprint(s.title())",
+  "o": [
+   "Code Breaker",
+   "CODE BREAKER",
+   "code breaker",
+   "Code breaker"
+  ],
+  "a": "Code Breaker",
+  "e": "title() capitalises the first letter of every word.",
+  "h": "Each word starts uppercase.",
+  "id": "PY-096"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(\"  hi  \".strip())",
+  "o": [
+   "hi",
+   "  hi  ",
+   "hi  ",
+   "Error"
+  ],
+  "a": "hi",
+  "e": "strip() removes whitespace from both ends.",
+  "h": "Trim both ends.",
+  "id": "PY-097"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(\"a-b-c\".replace(\"-\", \"\"))",
+  "o": [
+   "abc",
+   "a-b-c",
+   "a b c",
+   "Error"
+  ],
+  "a": "abc",
+  "e": "replace() swaps every dash for an empty string.",
+  "h": "Replace with nothing.",
+  "id": "PY-098"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(\"Python\"[1:4])",
+  "o": [
+   "yth",
+   "Pyt",
+   "ytho",
+   "tho"
+  ],
+  "a": "yth",
+  "e": "Slice [1:4] takes indexes 1, 2 and 3: y, t, h.",
+  "h": "The end is excluded.",
+  "id": "PY-099"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "x = [3, 1, 2]\nx.reverse()\nprint(x)",
+  "o": [
+   "[2, 1, 3]",
+   "[1, 2, 3]",
+   "[3, 2, 1]",
+   "None"
+  ],
+  "a": "[2, 1, 3]",
+  "e": "reverse() flips the list in place, so [3, 1, 2] becomes [2, 1, 3].",
+  "h": "Reverse, not sort.",
+  "id": "PY-100"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [1, 2, 3, 4]\nprint(x[-2:])",
+  "o": [
+   "[3, 4]",
+   "[2, 3]",
+   "[4]",
+   "[1, 2]"
+  ],
+  "a": "[3, 4]",
+  "e": "x[-2:] takes the last two items.",
+  "h": "A negative start index.",
+  "id": "PY-101"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [1, 2, 3]\nx.insert(1, 9)\nprint(x)",
+  "o": [
+   "[1, 9, 2, 3]",
+   "[9, 1, 2, 3]",
+   "[1, 2, 9, 3]",
+   "[1, 2, 3, 9]"
+  ],
+  "a": "[1, 9, 2, 3]",
+  "e": "insert(1, 9) places 9 at index 1.",
+  "h": "Index first, value second.",
+  "id": "PY-102"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(sum([1, 2, 3, 4]))",
+  "o": [
+   "10",
+   "9",
+   "24",
+   "Error"
+  ],
+  "a": "10",
+  "e": "sum() adds all the items: 1 + 2 + 3 + 4 = 10.",
+  "h": "Add them.",
+  "id": "PY-103"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(6) if x % 2 == 0])",
+  "o": [
+   "[0, 2, 4]",
+   "[1, 3, 5]",
+   "[0, 2, 4, 6]",
+   "[2, 4]"
+  ],
+  "a": "[0, 2, 4]",
+  "e": "The condition keeps only the even numbers from 0 to 5.",
+  "h": "Even values.",
+  "id": "PY-104"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 1}\nd[\"b\"] = 2\nprint(sorted(d))",
+  "o": [
+   "['a', 'b']",
+   "['b', 'a']",
+   "[1, 2]",
+   "Error"
+  ],
+  "a": "['a', 'b']",
+  "e": "sorted() on a dict returns its keys in order.",
+  "h": "Keys, sorted.",
+  "id": "PY-105"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 1, \"b\": 2}\nprint(\"b\" in d)",
+  "o": [
+   "True",
+   "False",
+   "2",
+   "Error"
+  ],
+  "a": "True",
+  "e": "The in operator checks the keys of a dict. b is a key.",
+  "h": "Keys only.",
+  "id": "PY-106"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 1, \"b\": 2}\nprint(sum(d.values()))",
+  "o": [
+   "3",
+   "2",
+   "1",
+   "Error"
+  ],
+  "a": "3",
+  "e": "values() gives 1 and 2, and sum adds them.",
+  "h": "Values, not keys.",
+  "id": "PY-107"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(1, 5):\n    total += i\nprint(total)",
+  "o": [
+   "10",
+   "15",
+   "4",
+   "6"
+  ],
+  "a": "10",
+  "e": "1 + 2 + 3 + 4 = 10.",
+  "h": "It stops before 5.",
+  "id": "PY-108"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "for i in range(3):\n    for j in range(2):\n        print(i, j, end=\" \")",
+  "o": [
+   "0 0 0 1 1 0 1 1 2 0 2 1",
+   "0 0 1 1 2 2",
+   "0 1 2 0 1 2",
+   "0 0 0 1 1 0 1 1"
+  ],
+  "a": "0 0 0 1 1 0 1 1 2 0 2 1",
+  "e": "Each of the 3 values of i is paired with both values of j.",
+  "h": "Nested loops multiply.",
+  "id": "PY-109"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "i = 10\nwhile i > 0:\n    i -= 4\nprint(i)",
+  "o": [
+   "-2",
+   "0",
+   "2",
+   "-4"
+  ],
+  "a": "-2",
+  "e": "i goes 10, 6, 2, -2 and then the loop stops.",
+  "h": "Trace each step.",
+  "id": "PY-110"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(True and not False or False)",
+  "o": [
+   "True",
+   "False",
+   "None",
+   "Error"
+  ],
+  "a": "True",
+  "e": "not False is True, True and True is True, and True or False is True.",
+  "h": "not binds first.",
+  "id": "PY-111"
+ },
+ {
+  "t": "po",
+  "topic": "functions",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "def f(*a):\n    return len(a)\nprint(f(1, 2, 3))",
+  "o": [
+   "3",
+   "1",
+   "0",
+   "Error"
+  ],
+  "a": "3",
+  "e": "*a collects all positional arguments into a tuple of length 3.",
+  "h": "Count the arguments.",
+  "id": "PY-112"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def f(n):\n    if n > 0:\n        return n + f(n - 1)\n    return 0\nprint(f(4))",
+  "o": [
+   "10",
+   "4",
+   "24",
+   "0"
+  ],
+  "a": "10",
+  "e": "4 + 3 + 2 + 1 + 0 = 10.",
+  "h": "Sum down to zero.",
+  "w": 5,
+  "id": "PY-113"
+ },
+ {
+  "t": "po",
+  "topic": "sorting",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [3, 1, 2]\nprint(sorted(x, reverse=True))",
+  "o": [
+   "[3, 2, 1]",
+   "[1, 2, 3]",
+   "[2, 1, 3]",
+   "None"
+  ],
+  "a": "[3, 2, 1]",
+  "e": "reverse=True sorts in descending order.",
+  "h": "Descending.",
+  "w": 5,
+  "id": "PY-114"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = []\nfor c in \"abc\":\n    s.append(c)\nprint(s.pop())",
+  "o": [
+   "c",
+   "a",
+   "b",
+   "abc"
+  ],
+  "a": "c",
+  "e": "The last item pushed (c) is popped first: last in, first out.",
+  "h": "LIFO.",
+  "w": 5,
+  "id": "PY-115"
+ },
+ {
+  "t": "po",
+  "topic": "complexity",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "n = 0\nfor i in range(4):\n    for j in range(4):\n        n += 1\nprint(n)",
+  "o": [
+   "16",
+   "8",
+   "4",
+   "12"
+  ],
+  "a": "16",
+  "e": "Two nested loops of 4 run 4 x 4 = 16 times, which is O(n squared).",
+  "h": "Multiply the loops.",
+  "w": 5,
+  "id": "PY-116"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "a = [1, 3, 5, 7, 9]\nlo, hi = 0, 4\nmid = (lo + hi) // 2\nprint(a[mid])",
+  "o": [
+   "5",
+   "3",
+   "7",
+   "2"
+  ],
+  "a": "5",
+  "e": "mid is 2 and a[2] is 5, the middle item.",
+  "h": "Index 2.",
+  "w": 5,
+  "id": "PY-117"
+ },
+ {
+  "t": "po",
+  "topic": "sets",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(len(set([1, 1, 2, 3, 3])))",
+  "o": [
+   "3",
+   "5",
+   "2",
+   "Error"
+  ],
+  "a": "3",
+  "e": "set() removes duplicates, leaving 1, 2 and 3.",
+  "h": "Unique values.",
+  "id": "PY-118"
+ },
+ {
+  "t": "po",
+  "topic": "data types",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(type([]), type(()))",
+  "o": [
+   "<class 'list'> <class 'tuple'>",
+   "<class 'tuple'> <class 'list'>",
+   "<class 'list'> <class 'list'>",
+   "Error"
+  ],
+  "a": "<class 'list'> <class 'tuple'>",
+  "e": "[] is a list and () is an empty tuple.",
+  "h": "Brackets versus parentheses.",
+  "id": "PY-119"
+ },
+ {
+  "t": "po",
+  "topic": "type conversion",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(int(\"3\") * 2, str(3) * 2)",
+  "o": [
+   "6 33",
+   "6 6",
+   "33 6",
+   "Error"
+  ],
+  "a": "6 33",
+  "e": "int(\"3\") * 2 is 6, while str(3) * 2 repeats the text to give 33.",
+  "h": "One is a number, one is text.",
+  "id": "PY-120"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "What happens when this code runs?",
+  "code": "d = {\"a\": 1}\nprint(d[\"b\"])",
+  "o": [
+   "KeyError: the key does not exist",
+   "IndexError",
+   "NameError",
+   "It prints None"
+  ],
+  "a": "KeyError: the key does not exist",
+  "e": "Reading a missing key from a dict raises KeyError.",
+  "h": "Is b a key?",
+  "id": "PY-121"
+ },
+ {
+  "t": "fb",
+  "topic": "type errors",
+  "d": "medium",
+  "q": "What happens when this code runs?",
+  "code": "print(\"age: \" + 5)",
+  "o": [
+   "TypeError: cannot join str and int",
+   "SyntaxError",
+   "It prints age: 5",
+   "NameError"
+  ],
+  "a": "TypeError: cannot join str and int",
+  "e": "You cannot add a string and an integer. Use str(5) or an f-string.",
+  "h": "Mixed types.",
+  "id": "PY-122"
+ },
+ {
+  "t": "cc",
+  "topic": "lists",
+  "d": "easy",
+  "q": "Fill the blank so the code prints [1, 2, 3].",
+  "code": "x = [1, 2]\nx.____(3)\nprint(x)",
+  "o": [
+   "append",
+   "add",
+   "push",
+   "insert"
+  ],
+  "a": "append",
+  "e": "append() adds one item at the end of a list.",
+  "h": "A list method.",
+  "id": "PY-123"
+ },
+ {
+  "t": "cc",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "Fill the blank so the code prints 0.",
+  "code": "d = {}\nprint(d.____(\"k\", 0))",
+  "o": [
+   "get",
+   "pop",
+   "keys",
+   "add"
+  ],
+  "a": "get",
+  "e": "get() returns the default (0) when the key is missing.",
+  "h": "Safe lookup.",
+  "id": "PY-124"
+ },
+ {
+  "t": "cc",
+  "topic": "loops",
+  "d": "medium",
+  "q": "Fill the blank so the loop prints 10 8 6 4 2.",
+  "code": "for i in range(10, 0, ____):\n    print(i, end=\" \")",
+  "o": [
+   "-2",
+   "2",
+   "-1",
+   "1"
+  ],
+  "a": "-2",
+  "e": "A step of -2 counts down by two.",
+  "h": "Counting down.",
+  "id": "PY-125"
+ },
+ {
+  "t": "lp",
+  "topic": "complexity",
+  "d": "medium",
+  "q": "Which complexity grows slowest as n gets large?",
+  "code": "",
+  "o": [
+   "O(log n)",
+   "O(n)",
+   "O(n squared)",
+   "O(2 to the n)"
+  ],
+  "a": "O(log n)",
+  "e": "Logarithmic growth is the slowest of these.",
+  "h": "Binary search is like this.",
+  "w": 5,
+  "id": "PY-126"
+ },
+ {
+  "t": "lp",
+  "topic": "DNS",
+  "d": "medium",
+  "q": "Which DNS record type maps a domain name to an IPv4 address?",
+  "code": "",
+  "o": [
+   "A record",
+   "MX record",
+   "TXT record",
+   "CNAME record"
+  ],
+  "a": "A record",
+  "e": "An A record maps a hostname to an IPv4 address.",
+  "h": "A stands for Address.",
+  "w": 4,
+  "id": "PY-127"
+ },
+ {
+  "t": "lp",
+  "topic": "HTTP",
+  "d": "medium",
+  "q": "Which HTTP method is normally used to submit data to create a resource?",
+  "code": "",
+  "o": [
+   "POST",
+   "GET",
+   "HEAD",
+   "TRACE"
+  ],
+  "a": "POST",
+  "e": "POST sends data to the server, typically to create something.",
+  "h": "It is not GET.",
+  "w": 4,
+  "id": "PY-128"
+ },
+ {
+  "t": "lp",
+  "topic": "TCP",
+  "d": "medium",
+  "q": "What does the TCP three-way handshake establish?",
+  "code": "",
+  "o": [
+   "A reliable connection",
+   "A DNS record",
+   "An encrypted file",
+   "A routing table"
+  ],
+  "a": "A reliable connection",
+  "e": "SYN, SYN-ACK and ACK set up a TCP connection before data flows.",
+  "h": "Three steps.",
+  "w": 4,
+  "id": "PY-129"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(\"hello\"[0].upper() + \"hello\"[1:])",
+  "o": [
+   "Hello",
+   "HELLO",
+   "hello",
+   "Error"
+  ],
+  "a": "Hello",
+  "e": "The first letter is uppercased and joined with the rest: Hello.",
+  "h": "Capitalise by hand.",
+  "id": "PY-130"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(\"a b c\".split()[-1])",
+  "o": [
+   "c",
+   "a",
+   "b",
+   "Error"
+  ],
+  "a": "c",
+  "e": "split() gives [a, b, c] and index -1 is the last item.",
+  "h": "The last item.",
+  "id": "PY-131"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(\"-\".join([\"a\", \"b\", \"c\"]))",
+  "o": [
+   "a-b-c",
+   "abc",
+   "a b c",
+   "-abc"
+  ],
+  "a": "a-b-c",
+  "e": "join() puts the separator between the items.",
+  "h": "Separator between items.",
+  "id": "PY-132"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print(\"banana\".count(\"an\"))",
+  "o": [
+   "2",
+   "3",
+   "1",
+   "0"
+  ],
+  "a": "2",
+  "e": "The text an appears twice in banana.",
+  "h": "Count the matches.",
+  "id": "PY-133"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(\"code\".find(\"d\"))",
+  "o": [
+   "2",
+   "3",
+   "1",
+   "-1"
+  ],
+  "a": "2",
+  "e": "find() returns the index of the first match: c=0, o=1, d=2.",
+  "h": "Index of d.",
+  "id": "PY-134"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [1, 2, 3]\ny = x[:]\ny.append(4)\nprint(x)",
+  "o": [
+   "[1, 2, 3]",
+   "[1, 2, 3, 4]",
+   "[4]",
+   "Error"
+  ],
+  "a": "[1, 2, 3]",
+  "e": "x[:] makes a copy, so changing y does not change x.",
+  "h": "A slice copies.",
+  "id": "PY-135"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [5, 3, 8]\nx.sort(reverse=True)\nprint(x[0])",
+  "o": [
+   "8",
+   "3",
+   "5",
+   "Error"
+  ],
+  "a": "8",
+  "e": "A descending sort puts 8 first.",
+  "h": "Largest first.",
+  "id": "PY-136"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [1, 2, 3, 2]\nprint(x.index(2))",
+  "o": [
+   "1",
+   "3",
+   "2",
+   "0"
+  ],
+  "a": "1",
+  "e": "index() returns the first position of the value.",
+  "h": "First match.",
+  "id": "PY-137"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(list(range(5, 0, -2)))",
+  "o": [
+   "[5, 3, 1]",
+   "[5, 4, 3]",
+   "[5, 3]",
+   "[1, 3, 5]"
+  ],
+  "a": "[5, 3, 1]",
+  "e": "Counting down by 2 from 5 stops before 0: 5, 3, 1.",
+  "h": "Step -2.",
+  "id": "PY-138"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x * x for x in range(1, 4)])",
+  "o": [
+   "[1, 4, 9]",
+   "[1, 2, 3]",
+   "[1, 4, 9, 16]",
+   "[2, 4, 6]"
+  ],
+  "a": "[1, 4, 9]",
+  "e": "Each of 1, 2, 3 is squared.",
+  "h": "Square each value.",
+  "id": "PY-139"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 1, \"b\": 2}\nd.pop(\"a\")\nprint(d)",
+  "o": [
+   "{'b': 2}",
+   "{'a': 1}",
+   "{}",
+   "Error"
+  ],
+  "a": "{'b': 2}",
+  "e": "pop(\"a\") removes that key and its value.",
+  "h": "It removes the key.",
+  "id": "PY-140"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "d = {}\nfor c in \"aab\":\n    d[c] = d.get(c, 0) + 1\nprint(d)",
+  "o": [
+   "{'a': 2, 'b': 1}",
+   "{'a': 1, 'b': 1}",
+   "{'a': 1, 'b': 2}",
+   "Error"
+  ],
+  "a": "{'a': 2, 'b': 1}",
+  "e": "The loop counts how many times each letter appears.",
+  "h": "Count the letters.",
+  "id": "PY-141"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "for i in range(3):\n    if i == 1:\n        continue\n    print(i, end=\" \")",
+  "o": [
+   "0 2",
+   "0 1 2",
+   "1",
+   "0"
+  ],
+  "a": "0 2",
+  "e": "continue skips the rest of that iteration, so 1 is not printed.",
+  "h": "It skips i == 1.",
+  "id": "PY-142"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "n = 27\nsteps = 0\nwhile n != 1 and steps < 3:\n    n = n // 2 if n % 2 == 0 else 3 * n + 1\n    steps += 1\nprint(n)",
+  "o": [
+   "124",
+   "82",
+   "41",
+   "1"
+  ],
+  "a": "124",
+  "e": "Step 1 gives 82, step 2 gives 41, step 3 gives 124.",
+  "h": "Trace three steps.",
+  "id": "PY-143"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(10):\n    if i % 3 == 0:\n        total += i\nprint(total)",
+  "o": [
+   "18",
+   "9",
+   "27",
+   "12"
+  ],
+  "a": "18",
+  "e": "The multiples of 3 below 10 are 0, 3, 6, 9 and they add up to 18.",
+  "h": "0, 3, 6, 9.",
+  "id": "PY-144"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = 1\nwhile x < 50:\n    x *= 2\nprint(x)",
+  "o": [
+   "64",
+   "32",
+   "50",
+   "100"
+  ],
+  "a": "64",
+  "e": "x doubles until it is at least 50: 2, 4, 8, 16, 32, 64.",
+  "h": "Keep doubling.",
+  "id": "PY-145"
+ },
+ {
+  "t": "po",
+  "topic": "functions",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "def f(a, b=2):\n    return a ** b\nprint(f(3), f(2, 3))",
+  "o": [
+   "9 8",
+   "6 6",
+   "9 6",
+   "3 2"
+  ],
+  "a": "9 8",
+  "e": "f(3) uses b=2 giving 9, and f(2, 3) is 2 cubed = 8.",
+  "h": "Default parameter.",
+  "id": "PY-146"
+ },
+ {
+  "t": "po",
+  "topic": "functions",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def counter():\n    c = 0\n    def inc():\n        nonlocal c\n        c += 1\n        return c\n    return inc\nf = counter()\nf()\nprint(f())",
+  "o": [
+   "2",
+   "1",
+   "0",
+   "Error"
+  ],
+  "a": "2",
+  "e": "nonlocal lets inc update c, so the second call returns 2.",
+  "h": "The closure remembers c.",
+  "id": "PY-147"
+ },
+ {
+  "t": "po",
+  "topic": "functions",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "def swap(a, b):\n    return b, a\nx, y = swap(1, 2)\nprint(x, y)",
+  "o": [
+   "2 1",
+   "1 2",
+   "(2, 1)",
+   "Error"
+  ],
+  "a": "2 1",
+  "e": "The function returns a tuple that is unpacked into x and y.",
+  "h": "Tuple unpacking.",
+  "id": "PY-148"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def p(n):\n    return 1 if n == 0 else 2 * p(n - 1)\nprint(p(5))",
+  "o": [
+   "32",
+   "10",
+   "16",
+   "64"
+  ],
+  "a": "32",
+  "e": "p(n) is 2 to the power n, so p(5) is 32.",
+  "h": "It doubles each call.",
+  "w": 5,
+  "id": "PY-149"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def s(t):\n    return t if len(t) <= 1 else s(t[1:]) + t[0]\nprint(s(\"abc\"))",
+  "o": [
+   "cba",
+   "abc",
+   "bca",
+   "a"
+  ],
+  "a": "cba",
+  "e": "The function reverses the string recursively.",
+  "h": "It reverses.",
+  "w": 5,
+  "id": "PY-150"
+ },
+ {
+  "t": "po",
+  "topic": "sorting",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "a = [4, 3, 2, 1]\nfor i in range(len(a) - 1):\n    j = i\n    for k in range(i + 1, len(a)):\n        if a[k] < a[j]:\n            j = k\n    a[i], a[j] = a[j], a[i]\nprint(a)",
+  "o": [
+   "[1, 2, 3, 4]",
+   "[4, 3, 2, 1]",
+   "[1, 3, 2, 4]",
+   "[2, 1, 4, 3]"
+  ],
+  "a": "[1, 2, 3, 4]",
+  "e": "This is selection sort: it puts the smallest remaining item in each position.",
+  "h": "Selection sort.",
+  "w": 5,
+  "id": "PY-151"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "a = [2, 4, 6, 8]\nlo, hi = 0, 3\nwhile lo <= hi:\n    mid = (lo + hi) // 2\n    if a[mid] < 6:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(lo)",
+  "o": [
+   "2",
+   "1",
+   "3",
+   "0"
+  ],
+  "a": "2",
+  "e": "The search narrows until lo points at the first item that is at least 6: index 2.",
+  "h": "Trace lo and hi.",
+  "w": 5,
+  "id": "PY-152"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = [1, 2, 3]\ns.append(s.pop() * 2)\nprint(s)",
+  "o": [
+   "[1, 2, 6]",
+   "[1, 2, 3]",
+   "[2, 4, 6]",
+   "[6]"
+  ],
+  "a": "[1, 2, 6]",
+  "e": "pop() removes 3, it is doubled, then append pushes 6 back.",
+  "h": "Pop then push.",
+  "w": 5,
+  "id": "PY-153"
+ },
+ {
+  "t": "po",
+  "topic": "queues",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "from collections import deque\nq = deque([1, 2])\nq.append(3)\nprint(q.popleft())",
+  "o": [
+   "1",
+   "3",
+   "2",
+   "Error"
+  ],
+  "a": "1",
+  "e": "A queue removes the oldest item from the left.",
+  "h": "First in, first out.",
+  "w": 5,
+  "id": "PY-154"
+ },
+ {
+  "t": "po",
+  "topic": "sets",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "a = {1, 2, 3}\nb = {2, 3, 4}\nprint(sorted(a & b))",
+  "o": [
+   "[2, 3]",
+   "[1, 4]",
+   "[1, 2, 3, 4]",
+   "[3]"
+  ],
+  "a": "[2, 3]",
+  "e": "The & operator gives the intersection: items in both sets.",
+  "h": "Common items.",
+  "id": "PY-155"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(2 ** 3 ** 2)",
+  "o": [
+   "512",
+   "64",
+   "36",
+   "Error"
+  ],
+  "a": "512",
+  "e": "** is right-associative: 3 ** 2 is 9, then 2 ** 9 is 512.",
+  "h": "Right to left.",
+  "id": "PY-156"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(not 0 == 1)",
+  "o": [
+   "True",
+   "False",
+   "None",
+   "Error"
+  ],
+  "a": "True",
+  "e": "0 == 1 is False and not False is True.",
+  "h": "The comparison happens first.",
+  "id": "PY-157"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(bool([]), bool([0]))",
+  "o": [
+   "False True",
+   "True True",
+   "False False",
+   "True False"
+  ],
+  "a": "False True",
+  "e": "An empty list is falsy but [0] has an item so it is truthy.",
+  "h": "Empty is falsy.",
+  "id": "PY-158"
+ },
+ {
+  "t": "po",
+  "topic": "data types",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(isinstance(3, int), isinstance(3.0, int))",
+  "o": [
+   "True False",
+   "True True",
+   "False False",
+   "False True"
+  ],
+  "a": "True False",
+  "e": "3 is an int and 3.0 is a float.",
+  "h": "The types differ.",
+  "id": "PY-159"
+ },
+ {
+  "t": "fb",
+  "topic": "logical errors",
+  "d": "medium",
+  "q": "This loop should print 1 to 5 but misses 5. Why?",
+  "code": "for i in range(1, 5):\n    print(i)",
+  "o": [
+   "range stops before 5, so use range(1, 6)",
+   "print is wrong",
+   "i must start at 0",
+   "Missing colon"
+  ],
+  "a": "range stops before 5, so use range(1, 6)",
+  "e": "range excludes the stop value.",
+  "h": "Check the stop value.",
+  "id": "PY-160"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "What happens when this code runs?",
+  "code": "x = 10 / 0",
+  "o": [
+   "ZeroDivisionError",
+   "ValueError",
+   "TypeError",
+   "It prints inf"
+  ],
+  "a": "ZeroDivisionError",
+  "e": "Dividing by zero raises ZeroDivisionError.",
+  "h": "Division by 0.",
+  "id": "PY-161"
+ },
+ {
+  "t": "cc",
+  "topic": "functions",
+  "d": "medium",
+  "q": "Fill the blank so the function returns the larger value.",
+  "code": "def big(a, b):\n    return a if ____ else b",
+  "o": [
+   "a > b",
+   "a < b",
+   "a == b",
+   "a = b"
+  ],
+  "a": "a > b",
+  "e": "If a is greater than b the function returns a, otherwise b.",
+  "h": "Which one is bigger?",
+  "id": "PY-162"
+ },
+ {
+  "t": "cc",
+  "topic": "strings",
+  "d": "easy",
+  "q": "Fill the blank so the code prints PYTHON.",
+  "code": "print(\"python\".____())",
+  "o": [
+   "upper",
+   "lower",
+   "title",
+   "strip"
+  ],
+  "a": "upper",
+  "e": "upper() returns the uppercase string.",
+  "h": "Capital letters.",
+  "id": "PY-163"
+ },
+ {
+  "t": "cc",
+  "topic": "loops",
+  "d": "medium",
+  "q": "Fill the blank so the loop prints 3 2 1.",
+  "code": "for i in range(3, 0, ____):\n    print(i, end=\" \")",
+  "o": [
+   "-1",
+   "1",
+   "-2",
+   "0"
+  ],
+  "a": "-1",
+  "e": "A step of -1 counts down.",
+  "h": "Counting down.",
+  "id": "PY-164"
+ },
+ {
+  "t": "lp",
+  "topic": "complexity",
+  "d": "medium",
+  "q": "Which sorting algorithm has O(n log n) average time?",
+  "code": "",
+  "o": [
+   "Merge sort",
+   "Bubble sort",
+   "Selection sort",
+   "Insertion sort"
+  ],
+  "a": "Merge sort",
+  "e": "Merge sort splits and merges, giving O(n log n).",
+  "h": "Divide and conquer.",
+  "w": 5,
+  "id": "PY-165"
+ },
+ {
+  "t": "lp",
+  "topic": "trees",
+  "d": "medium",
+  "q": "In a binary tree, how many children can a node have at most?",
+  "code": "",
+  "o": [
+   "2",
+   "1",
+   "3",
+   "Unlimited"
+  ],
+  "a": "2",
+  "e": "A binary tree node has at most two children.",
+  "h": "Bi means two.",
+  "w": 5,
+  "id": "PY-166"
+ },
+ {
+  "t": "lp",
+  "topic": "graphs",
+  "d": "medium",
+  "q": "Which traversal uses a queue to visit a graph level by level?",
+  "code": "",
+  "o": [
+   "Breadth-first search",
+   "Depth-first search",
+   "Binary search",
+   "Bubble sort"
+  ],
+  "a": "Breadth-first search",
+  "e": "BFS uses a queue to explore neighbours level by level.",
+  "h": "Breadth, not depth.",
+  "w": 5,
+  "id": "PY-167"
+ },
+ {
+  "t": "lp",
+  "topic": "DNS",
+  "d": "medium",
+  "q": "Which port does HTTPS use by default?",
+  "code": "",
+  "o": [
+   "443",
+   "80",
+   "22",
+   "53"
+  ],
+  "a": "443",
+  "e": "HTTPS uses port 443 by default.",
+  "h": "Not 80.",
+  "w": 4,
+  "id": "PY-168"
+ },
+ {
+  "t": "lp",
+  "topic": "TCP",
+  "d": "medium",
+  "q": "Which protocol does ping use to test reachability?",
+  "code": "",
+  "o": [
+   "ICMP",
+   "HTTP",
+   "SMTP",
+   "FTP"
+  ],
+  "a": "ICMP",
+  "e": "ping sends ICMP echo requests.",
+  "h": "Not TCP or UDP.",
+  "w": 4,
+  "id": "PY-169"
+ },
+ {
+  "t": "lp",
+  "topic": "routing",
+  "d": "medium",
+  "q": "What does a subnet mask do?",
+  "code": "",
+  "o": [
+   "Splits an IP address into network and host parts",
+   "Encrypts traffic",
+   "Stores web pages",
+   "Compiles code"
+  ],
+  "a": "Splits an IP address into network and host parts",
+  "e": "The mask marks which bits are the network and which are the host.",
+  "h": "Network versus host.",
+  "w": 4,
+  "id": "PY-170"
+ },
+ {
+  "t": "lp",
+  "topic": "OSI model",
+  "d": "medium",
+  "q": "At which OSI layer does HTTP operate?",
+  "code": "",
+  "o": [
+   "Application (Layer 7)",
+   "Transport (Layer 4)",
+   "Network (Layer 3)",
+   "Data Link (Layer 2)"
+  ],
+  "a": "Application (Layer 7)",
+  "e": "HTTP is an application-layer protocol.",
+  "h": "The top layer.",
+  "w": 4,
+  "id": "PY-171"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(13) if x % 4 == 0])",
+  "o": [
+   "[0, 4, 8, 12]",
+   "[1, 5, 9]",
+   "[0, 4, 8, 12, 16]",
+   "[0, 1, 2, 3]"
+  ],
+  "a": "[0, 4, 8, 12]",
+  "e": "It keeps the values below 13 whose remainder when divided by 4 is 0.",
+  "h": "Check the remainder.",
+  "id": "PY-172"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "count = 0\nfor i in range(5):\n    for j in range(5):\n        if i > j:\n            count += 1\nprint(count)",
+  "o": [
+   "10",
+   "15",
+   "5",
+   "25"
+  ],
+  "a": "10",
+  "e": "Count the pairs (i, j) for which i > j holds. There are 10.",
+  "h": "List the pairs.",
+  "id": "PY-173"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "expert",
+  "q": "What will this code print?",
+  "code": "a = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75]\nt = 51\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    steps += 1\n    mid = (lo + hi) // 2\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "o": [
+   "4",
+   "5",
+   "3",
+   "18"
+  ],
+  "a": "4",
+  "e": "Binary search halves the range each time. Finding 51 takes 4 step(s).",
+  "h": "Trace lo, hi and mid.",
+  "w": 5,
+  "id": "PY-174"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "name = \"compiler\"\nprint(f\"{name.upper()} has {len(name) * 3} points\")",
+  "o": [
+   "COMPILER has 24 points",
+   "COMPILER has 11 points",
+   "compiler has 24 points",
+   "COMPILER has 8 points"
+  ],
+  "a": "COMPILER has 24 points",
+  "e": "The f-string inserts the uppercase name and len(name) * 3.",
+  "h": "Evaluate each placeholder.",
+  "id": "PY-175"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "count = 0\nfor i in range(3):\n    for j in range(5):\n        if i < j:\n            count += 1\nprint(count)",
+  "o": [
+   "9",
+   "12",
+   "3",
+   "6"
+  ],
+  "a": "9",
+  "e": "Count the pairs (i, j) for which i < j holds. There are 9.",
+  "h": "List the pairs.",
+  "id": "PY-176"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(12) if x % 2 == 1])",
+  "o": [
+   "[1, 3, 5, 7, 9, 11]",
+   "[0, 2, 4, 6, 8, 10]",
+   "[1, 3, 5, 7, 9, 11, 13]",
+   "[2, 3]"
+  ],
+  "a": "[1, 3, 5, 7, 9, 11]",
+  "e": "It keeps the values below 12 whose remainder when divided by 2 is 1.",
+  "h": "Check the remainder.",
+  "id": "PY-177"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(5, 11):\n    total += i\nprint(total)",
+  "o": [
+   "45",
+   "56",
+   "40",
+   "35"
+  ],
+  "a": "45",
+  "e": "range(5, 11) covers 5 up to 10; those values add up to 45.",
+  "h": "The stop value is not included.",
+  "id": "PY-178"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [6, 7, 9, 2]\nx.sort()\nprint(x)",
+  "o": [
+   "[2, 6, 7, 9]",
+   "[6, 7, 9, 2, 7]",
+   "[6, 8, 7, 9, 2]",
+   "[6, 7, 9]"
+  ],
+  "a": "[2, 6, 7, 9]",
+  "e": "After x.sort() the list is [2, 6, 7, 9].",
+  "h": "Methods change the list in place.",
+  "id": "PY-179"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(5 > 5 and 8 < 3 or 5 == 3)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "and binds tighter than or. The expression evaluates to False.",
+  "h": "Evaluate and before or.",
+  "id": "PY-180"
+ },
+ {
+  "t": "po",
+  "topic": "TCP",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "port = 25\nprint(port >= 1024)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "Ports below 1024 are well-known ports. 25 >= 1024 is False.",
+  "h": "Compare with 1024.",
+  "w": 4,
+  "id": "PY-181"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "ip = \"89.12.188.94\"\nprint(ip.split(\".\")[3])",
+  "o": [
+   "94",
+   "89",
+   "12",
+   "188"
+  ],
+  "a": "94",
+  "e": "split(\".\") gives the four parts of the address; index 3 is 94.",
+  "h": "Indexes start at 0.",
+  "w": 4,
+  "id": "PY-182"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "expert",
+  "q": "What will this code print?",
+  "code": "a = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]\nt = 18\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    steps += 1\n    mid = (lo + hi) // 2\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "o": [
+   "4",
+   "5",
+   "3",
+   "7"
+  ],
+  "a": "4",
+  "e": "Binary search halves the range each time. Finding 18 takes 4 step(s).",
+  "h": "Trace lo, hi and mid.",
+  "w": 5,
+  "id": "PY-183"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "ip = \"151.255.59.109\"\nprint(ip.split(\".\")[3])",
+  "o": [
+   "109",
+   "151",
+   "255",
+   "59"
+  ],
+  "a": "109",
+  "e": "split(\".\") gives the four parts of the address; index 3 is 109.",
+  "h": "Indexes start at 0.",
+  "w": 4,
+  "id": "PY-184"
+ },
+ {
+  "t": "po",
+  "topic": "bubble sort",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "a = [5, 7, 4, 8, 6]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "o": [
+   "[5, 4, 7, 6, 8]",
+   "[4, 5, 6, 7, 8]",
+   "[5, 7, 4, 8, 6]",
+   "[8, 7, 6, 5, 4]"
+  ],
+  "a": "[5, 4, 7, 6, 8]",
+  "e": "One bubble-sort pass swaps neighbours that are out of order, so the largest value moves to the end: [5, 4, 7, 6, 8].",
+  "h": "Trace the swaps from left to right.",
+  "w": 5,
+  "id": "PY-185"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(86 // 9, 86 % 9)",
+  "o": [
+   "9 5",
+   "9.555555555555555 5",
+   "9 6",
+   "5 9"
+  ],
+  "a": "9 5",
+  "e": "86 divided by 9 is 9 remainder 5.",
+  "h": "// is floor division, % is the remainder.",
+  "id": "PY-186"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(4, 8):\n    total += i\nprint(total)",
+  "o": [
+   "22",
+   "30",
+   "18",
+   "15"
+  ],
+  "a": "22",
+  "e": "range(4, 8) covers 4 up to 7; those values add up to 22.",
+  "h": "The stop value is not included.",
+  "id": "PY-187"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "n = 16\ncount = 0\nwhile n > 5:\n    n -= 2\n    count += 1\nprint(count)",
+  "o": [
+   "6",
+   "4",
+   "7",
+   "5"
+  ],
+  "a": "6",
+  "e": "n goes down by 2 each time and the loop runs while n > 5. It repeats 6 times.",
+  "h": "Trace n step by step.",
+  "id": "PY-188"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print(121 & 248)",
+  "o": [
+   "120",
+   "249",
+   "129",
+   "248"
+  ],
+  "a": "120",
+  "e": "& keeps only the bits that are set in both numbers: 121 & 248 = 120.",
+  "h": "Think in binary.",
+  "w": 4,
+  "id": "PY-189"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "n = 30\ncount = 0\nwhile n > 1:\n    n -= 2\n    count += 1\nprint(count)",
+  "o": [
+   "15",
+   "10",
+   "13",
+   "16"
+  ],
+  "a": "15",
+  "e": "n goes down by 2 each time and the loop runs while n > 1. It repeats 15 times.",
+  "h": "Trace n step by step.",
+  "id": "PY-190"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = []\ns.append(8)\ns.append(9)\ns.pop()\ns.append(5)\ns.append(9)\ns.append(7)\nprint(s)",
+  "o": [
+   "[8, 5, 9, 7]",
+   "[7, 9, 5, 8]",
+   "[5, 9, 7]",
+   "[8, 5, 9]"
+  ],
+  "a": "[8, 5, 9, 7]",
+  "e": "append pushes on the end and pop removes the last item. The final stack is [8, 5, 9, 7].",
+  "h": "Last in, first out.",
+  "w": 5,
+  "id": "PY-191"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "expert",
+  "q": "What will this code print?",
+  "code": "a = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39]\nt = 12\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    steps += 1\n    mid = (lo + hi) // 2\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "o": [
+   "3",
+   "4",
+   "2",
+   "5"
+  ],
+  "a": "3",
+  "e": "Binary search halves the range each time. Finding 12 takes 3 step(s).",
+  "h": "Trace lo, hi and mid.",
+  "w": 5,
+  "id": "PY-192"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [1, 3, 8]\nx.reverse()\nprint(x)",
+  "o": [
+   "[8, 3, 1]",
+   "[1, 3, 8, 7]",
+   "[1, 8, 3, 8]",
+   "[1, 3]"
+  ],
+  "a": "[8, 3, 1]",
+  "e": "After x.reverse() the list is [8, 3, 1].",
+  "h": "Methods change the list in place.",
+  "id": "PY-193"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "name = \"leviathan\"\nprint(f\"{name.upper()} has {len(name) * 2} points\")",
+  "o": [
+   "LEVIATHAN has 18 points",
+   "LEVIATHAN has 11 points",
+   "leviathan has 18 points",
+   "LEVIATHAN has 9 points"
+  ],
+  "a": "LEVIATHAN has 18 points",
+  "e": "The f-string inserts the uppercase name and len(name) * 2.",
+  "h": "Evaluate each placeholder.",
+  "id": "PY-194"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [8, 8, 9, 8, 7]\nx.reverse()\nprint(x)",
+  "o": [
+   "[7, 8, 9, 8, 8]",
+   "[8, 8, 9, 8, 7, 7]",
+   "[8, 8, 8, 9, 8, 7]",
+   "[8, 8, 9, 8]"
+  ],
+  "a": "[7, 8, 9, 8, 8]",
+  "e": "After x.reverse() the list is [7, 8, 9, 8, 8].",
+  "h": "Methods change the list in place.",
+  "id": "PY-195"
+ },
+ {
+  "t": "po",
+  "topic": "slicing",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "s = \"variable\"\nprint(s[2:7])",
+  "o": [
+   "riabl",
+   "riable",
+   "ariabl",
+   "variabl"
+  ],
+  "a": "riabl",
+  "e": "s[2:7] takes the characters at indexes 2 to 6, which gives riabl.",
+  "h": "The end index is excluded.",
+  "id": "PY-196"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(15) if x % 4 == 2])",
+  "o": [
+   "[2, 6, 10, 14]",
+   "[3, 7, 11]",
+   "[2, 6, 10, 14, 18]",
+   "[8, 9, 10, 11]"
+  ],
+  "a": "[2, 6, 10, 14]",
+  "e": "It keeps the values below 15 whose remainder when divided by 4 is 2.",
+  "h": "Check the remainder.",
+  "id": "PY-197"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = []\ns.append(7)\ns.append(8)\ns.append(5)\ns.append(6)\nprint(s)",
+  "o": [
+   "[7, 8, 5, 6]",
+   "[6, 5, 8, 7]",
+   "[8, 5, 6]",
+   "[7, 8, 5]"
+  ],
+  "a": "[7, 8, 5, 6]",
+  "e": "append pushes on the end and pop removes the last item. The final stack is [7, 8, 5, 6].",
+  "h": "Last in, first out.",
+  "w": 5,
+  "id": "PY-198"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(11) if x % 4 == 3])",
+  "o": [
+   "[3, 7]",
+   "[0, 4, 8]",
+   "[3, 7, 11]",
+   "[]"
+  ],
+  "a": "[3, 7]",
+  "e": "It keeps the values below 11 whose remainder when divided by 4 is 3.",
+  "h": "Check the remainder.",
+  "id": "PY-199"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "n = 29\ncount = 0\nwhile n > 0:\n    n -= 2\n    count += 1\nprint(count)",
+  "o": [
+   "15",
+   "10",
+   "13",
+   "16"
+  ],
+  "a": "15",
+  "e": "n goes down by 2 each time and the loop runs while n > 0. It repeats 15 times.",
+  "h": "Trace n step by step.",
+  "id": "PY-200"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(3, 10):\n    total += i\nprint(total)",
+  "o": [
+   "42",
+   "52",
+   "39",
+   "33"
+  ],
+  "a": "42",
+  "e": "range(3, 10) covers 3 up to 9; those values add up to 42.",
+  "h": "The stop value is not included.",
+  "id": "PY-201"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(2 > 4 and 4 < 2 or 2 == 2)",
+  "o": [
+   "True",
+   "False",
+   "None",
+   "Error"
+  ],
+  "a": "True",
+  "e": "and binds tighter than or. The expression evaluates to True.",
+  "h": "Evaluate and before or.",
+  "id": "PY-202"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print(193 & 255)",
+  "o": [
+   "193",
+   "255",
+   "62",
+   "194"
+  ],
+  "a": "193",
+  "e": "& keeps only the bits that are set in both numbers: 193 & 255 = 193.",
+  "h": "Think in binary.",
+  "w": 4,
+  "id": "PY-203"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(5 > 6 and 3 < 1 or 5 == 1)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "and binds tighter than or. The expression evaluates to False.",
+  "h": "Evaluate and before or.",
+  "id": "PY-204"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 8, \"b\": 3}\nd[\"c\"] = d[\"a\"] + d[\"b\"]\nprint(sorted(d.values()))",
+  "o": [
+   "[3, 8, 11]",
+   "[3, 8, 24]",
+   "['a', 'b', 'c']",
+   "[8, 3, 11]"
+  ],
+  "a": "[3, 8, 11]",
+  "e": "The new key c holds 11. sorted(d.values()) lists the values in order: [3, 8, 11].",
+  "h": "Values, not keys.",
+  "w": 3,
+  "id": "PY-205"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(4 > 8 and 3 < 9 or 4 == 9)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "and binds tighter than or. The expression evaluates to False.",
+  "h": "Evaluate and before or.",
+  "id": "PY-206"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def f(n):\n    return 0 if n == 0 else n + f(n - 1)\nprint(f(6))",
+  "o": [
+   "21",
+   "0",
+   "28",
+   "15"
+  ],
+  "a": "21",
+  "e": "f(6) adds 6 + ... + 1 = 21.",
+  "h": "Follow the calls down to the base case.",
+  "w": 5,
+  "id": "PY-207"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = \"code breaker\"\nprint(s.swapcase().title())",
+  "o": [
+   "Code Breaker",
+   "CODE BREAKER",
+   "code breaker",
+   "Code breaker"
+  ],
+  "a": "Code Breaker",
+  "e": "The methods run left to right: swapcase() and then title(). The result is Code Breaker.",
+  "h": "Apply the methods in order.",
+  "id": "PY-208"
+ },
+ {
+  "t": "po",
+  "topic": "operators",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "print(72 // 6, 72 % 6)",
+  "o": [
+   "12 0",
+   "12.0 0",
+   "12 2",
+   "0 12"
+  ],
+  "a": "12 0",
+  "e": "72 divided by 6 is 12 remainder 0.",
+  "h": "// is floor division, % is the remainder.",
+  "id": "PY-209"
+ },
+ {
+  "t": "po",
+  "topic": "while loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "n = 31\ncount = 0\nwhile n > 1:\n    n -= 5\n    count += 1\nprint(count)",
+  "o": [
+   "6",
+   "7",
+   "5",
+   "8"
+  ],
+  "a": "6",
+  "e": "n goes down by 5 each time and the loop runs while n > 1. It repeats 6 times.",
+  "h": "Trace n step by step.",
+  "id": "PY-210"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(0, 6):\n    total += i\nprint(total)",
+  "o": [
+   "15",
+   "21",
+   "10",
+   "16"
+  ],
+  "a": "15",
+  "e": "range(0, 6) covers 0 up to 5; those values add up to 15.",
+  "h": "The stop value is not included.",
+  "id": "PY-211"
+ },
+ {
+  "t": "po",
+  "topic": "TCP",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "port = 22\nprint(port >= 1024)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "Ports below 1024 are well-known ports. 22 >= 1024 is False.",
+  "h": "Compare with 1024.",
+  "w": 4,
+  "id": "PY-212"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(0, 7):\n    total += i\nprint(total)",
+  "o": [
+   "21",
+   "28",
+   "15",
+   "22"
+  ],
+  "a": "21",
+  "e": "range(0, 7) covers 0 up to 6; those values add up to 21.",
+  "h": "The stop value is not included.",
+  "id": "PY-213"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "name = \"leviathan\"\nprint(f\"{name.upper()} has {len(name) * 4} points\")",
+  "o": [
+   "LEVIATHAN has 36 points",
+   "LEVIATHAN has 13 points",
+   "leviathan has 36 points",
+   "LEVIATHAN has 9 points"
+  ],
+  "a": "LEVIATHAN has 36 points",
+  "e": "The f-string inserts the uppercase name and len(name) * 4.",
+  "h": "Evaluate each placeholder.",
+  "id": "PY-214"
+ },
+ {
+  "t": "po",
+  "topic": "recursion",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "def f(n):\n    return 1 if n == 0 else 2 * f(n - 1)\nprint(f(5))",
+  "o": [
+   "32",
+   "11",
+   "64",
+   "16"
+  ],
+  "a": "32",
+  "e": "f(5) is 2 to the power 5 = 32.",
+  "h": "Follow the calls down to the base case.",
+  "w": 5,
+  "id": "PY-215"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(15) if x % 3 == 2])",
+  "o": [
+   "[2, 5, 8, 11, 14]",
+   "[0, 3, 6, 9, 12]",
+   "[2, 5, 8, 11, 14, 17]",
+   "[6, 7, 8]"
+  ],
+  "a": "[2, 5, 8, 11, 14]",
+  "e": "It keeps the values below 15 whose remainder when divided by 3 is 2.",
+  "h": "Check the remainder.",
+  "id": "PY-216"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print(40 & 254)",
+  "o": [
+   "40",
+   "254",
+   "214",
+   "41"
+  ],
+  "a": "40",
+  "e": "& keeps only the bits that are set in both numbers: 40 & 254 = 40.",
+  "h": "Think in binary.",
+  "w": 4,
+  "id": "PY-217"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "ip = \"143.105.222.160\"\nprint(ip.split(\".\")[2])",
+  "o": [
+   "222",
+   "160",
+   "143",
+   "105"
+  ],
+  "a": "222",
+  "e": "split(\".\") gives the four parts of the address; index 2 is 222.",
+  "h": "Indexes start at 0.",
+  "w": 4,
+  "id": "PY-218"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = []\ns.append(4)\ns.append(2)\ns.append(1)\ns.pop()\ns.append(1)\ns.append(1)\nprint(s)",
+  "o": [
+   "[4, 2, 1, 1]",
+   "[1, 1, 2, 4]",
+   "[2, 1, 1]",
+   "[4, 2, 1]"
+  ],
+  "a": "[4, 2, 1, 1]",
+  "e": "append pushes on the end and pop removes the last item. The final stack is [4, 2, 1, 1].",
+  "h": "Last in, first out.",
+  "w": 5,
+  "id": "PY-219"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = []\ns.append(4)\ns.append(1)\ns.pop()\ns.append(9)\ns.append(3)\ns.pop()\nprint(s)",
+  "o": [
+   "[4, 9]",
+   "[9, 4]",
+   "[9]",
+   "[4]"
+  ],
+  "a": "[4, 9]",
+  "e": "append pushes on the end and pop removes the last item. The final stack is [4, 9].",
+  "h": "Last in, first out.",
+  "w": 5,
+  "id": "PY-220"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = \"data core\"\nprint(s.title().capitalize())",
+  "o": [
+   "Data core",
+   "DATA CORE",
+   "data core",
+   "Data Core"
+  ],
+  "a": "Data core",
+  "e": "The methods run left to right: title() and then capitalize(). The result is Data core.",
+  "h": "Apply the methods in order.",
+  "id": "PY-221"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(7 > 2 and 7 < 5 or 7 == 5)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "and binds tighter than or. The expression evaluates to False.",
+  "h": "Evaluate and before or.",
+  "id": "PY-222"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = \"Python\"\nprint(s.lower().title())",
+  "o": [
+   "Python",
+   "PYTHON",
+   "python",
+   "pYTHON"
+  ],
+  "a": "Python",
+  "e": "The methods run left to right: lower() and then title(). The result is Python.",
+  "h": "Apply the methods in order.",
+  "id": "PY-223"
+ },
+ {
+  "t": "po",
+  "topic": "stacks",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = []\ns.append(9)\ns.append(5)\ns.append(4)\ns.pop()\nprint(s)",
+  "o": [
+   "[9, 5]",
+   "[5, 9]",
+   "[5]",
+   "[9]"
+  ],
+  "a": "[9, 5]",
+  "e": "append pushes on the end and pop removes the last item. The final stack is [9, 5].",
+  "h": "Last in, first out.",
+  "w": 5,
+  "id": "PY-224"
+ },
+ {
+  "t": "po",
+  "topic": "slicing",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = \"network\"\nprint(s[-4:])",
+  "o": [
+   "work",
+   "netw",
+   "ork",
+   "twork"
+  ],
+  "a": "work",
+  "e": "s[-4:] takes the last 4 characters: work.",
+  "h": "Negative indexes count from the end.",
+  "id": "PY-225"
+ },
+ {
+  "t": "po",
+  "topic": "strings",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "s = \"hello world\"\nprint(s.title().lower())",
+  "o": [
+   "hello world",
+   "HELLO WORLD",
+   "Hello World",
+   "Hello world"
+  ],
+  "a": "hello world",
+  "e": "The methods run left to right: title() and then lower(). The result is hello world.",
+  "h": "Apply the methods in order.",
+  "id": "PY-226"
+ },
+ {
+  "t": "po",
+  "topic": "sets",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "A = {1, 3, 4, 5}\nB = {3, 4, 5, 7}\nprint(sorted(A - B))",
+  "o": [
+   "[1]",
+   "[1, 3, 4, 5, 7]",
+   "[3, 4, 5]",
+   "[1, 7]"
+  ],
+  "a": "[1]",
+  "e": "The - operator gives the difference of the two sets: [1].",
+  "h": "Think about which items are in both or either.",
+  "w": 3,
+  "id": "PY-227"
+ },
+ {
+  "t": "po",
+  "topic": "booleans",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "print(3 > 2 and 5 < 2 or 3 == 2)",
+  "o": [
+   "False",
+   "True",
+   "None",
+   "Error"
+  ],
+  "a": "False",
+  "e": "and binds tighter than or. The expression evaluates to False.",
+  "h": "Evaluate and before or.",
+  "id": "PY-228"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "expert",
+  "q": "What will this code print?",
+  "code": "a = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36]\nt = 3\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    steps += 1\n    mid = (lo + hi) // 2\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "o": [
+   "4",
+   "5",
+   "3",
+   "2"
+  ],
+  "a": "4",
+  "e": "Binary search halves the range each time. Finding 3 takes 4 step(s).",
+  "h": "Trace lo, hi and mid.",
+  "w": 5,
+  "id": "PY-229"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "ip = \"26.149.161.42\"\nprint(ip.split(\".\")[2])",
+  "o": [
+   "161",
+   "42",
+   "26",
+   "149"
+  ],
+  "a": "161",
+  "e": "split(\".\") gives the four parts of the address; index 2 is 161.",
+  "h": "Indexes start at 0.",
+  "w": 4,
+  "id": "PY-230"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "x = [1, 7, 5]\nx.remove(1)\nprint(x)",
+  "o": [
+   "[7, 5]",
+   "[1, 7, 5, 7]",
+   "[1, 8, 7, 5]",
+   "[1, 7]"
+  ],
+  "a": "[7, 5]",
+  "e": "After x.remove(1) the list is [7, 5].",
+  "h": "Methods change the list in place.",
+  "id": "PY-231"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(0, 3):\n    total += i\nprint(total)",
+  "o": [
+   "3",
+   "6",
+   "1",
+   "4"
+  ],
+  "a": "3",
+  "e": "range(0, 3) covers 0 up to 2; those values add up to 3.",
+  "h": "The stop value is not included.",
+  "id": "PY-232"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "count = 0\nfor i in range(3):\n    for j in range(4):\n        if i < j:\n            count += 1\nprint(count)",
+  "o": [
+   "6",
+   "9",
+   "3",
+   "12"
+  ],
+  "a": "6",
+  "e": "Count the pairs (i, j) for which i < j holds. There are 6.",
+  "h": "List the pairs.",
+  "id": "PY-233"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(16) if x % 4 == 2])",
+  "o": [
+   "[2, 6, 10, 14]",
+   "[3, 7, 11, 15]",
+   "[2, 6, 10, 14, 18]",
+   "[8, 9, 10, 11]"
+  ],
+  "a": "[2, 6, 10, 14]",
+  "e": "It keeps the values below 16 whose remainder when divided by 4 is 2.",
+  "h": "Check the remainder.",
+  "id": "PY-234"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 8, \"b\": 1}\nd[\"c\"] = d[\"a\"] + d[\"b\"]\nprint(sorted(d.values()))",
+  "o": [
+   "[1, 8, 9]",
+   "[1, 8, 8]",
+   "['a', 'b', 'c']",
+   "[8, 1, 9]"
+  ],
+  "a": "[1, 8, 9]",
+  "e": "The new key c holds 9. sorted(d.values()) lists the values in order: [1, 8, 9].",
+  "h": "Values, not keys.",
+  "w": 3,
+  "id": "PY-235"
+ },
+ {
+  "t": "po",
+  "topic": "bubble sort",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "a = [6, 5, 2, 7, 4]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "o": [
+   "[5, 2, 6, 4, 7]",
+   "[2, 4, 5, 6, 7]",
+   "[6, 5, 2, 7, 4]",
+   "[7, 6, 5, 4, 2]"
+  ],
+  "a": "[5, 2, 6, 4, 7]",
+  "e": "One bubble-sort pass swaps neighbours that are out of order, so the largest value moves to the end: [5, 2, 6, 4, 7].",
+  "h": "Trace the swaps from left to right.",
+  "w": 5,
+  "id": "PY-236"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "expert",
+  "q": "What will this code print?",
+  "code": "a = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84]\nt = 84\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    steps += 1\n    mid = (lo + hi) // 2\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "o": [
+   "5",
+   "6",
+   "4",
+   "29"
+  ],
+  "a": "5",
+  "e": "Binary search halves the range each time. Finding 84 takes 5 step(s).",
+  "h": "Trace lo, hi and mid.",
+  "w": 5,
+  "id": "PY-237"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(13) if x % 4 == 2])",
+  "o": [
+   "[2, 6, 10]",
+   "[3, 7, 11]",
+   "[2, 6, 10, 14]",
+   "[8, 9, 10, 11]"
+  ],
+  "a": "[2, 6, 10]",
+  "e": "It keeps the values below 13 whose remainder when divided by 4 is 2.",
+  "h": "Check the remainder.",
+  "id": "PY-238"
+ },
+ {
+  "t": "po",
+  "topic": "bubble sort",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "a = [5, 7, 3, 1, 4]\nfor i in range(len(a) - 1):\n    if a[i] > a[i + 1]:\n        a[i], a[i + 1] = a[i + 1], a[i]\nprint(a)",
+  "o": [
+   "[5, 3, 1, 4, 7]",
+   "[1, 3, 4, 5, 7]",
+   "[5, 7, 3, 1, 4]",
+   "[7, 5, 4, 3, 1]"
+  ],
+  "a": "[5, 3, 1, 4, 7]",
+  "e": "One bubble-sort pass swaps neighbours that are out of order, so the largest value moves to the end: [5, 3, 1, 4, 7].",
+  "h": "Trace the swaps from left to right.",
+  "w": 5,
+  "id": "PY-239"
+ },
+ {
+  "t": "po",
+  "topic": "loops",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "total = 0\nfor i in range(2, 10):\n    total += i\nprint(total)",
+  "o": [
+   "44",
+   "54",
+   "42",
+   "35"
+  ],
+  "a": "44",
+  "e": "range(2, 10) covers 2 up to 9; those values add up to 44.",
+  "h": "The stop value is not included.",
+  "id": "PY-240"
+ },
+ {
+  "t": "po",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "What will this code print?",
+  "code": "d = {\"a\": 5, \"b\": 2}\nd[\"c\"] = d[\"a\"] + d[\"b\"]\nprint(sorted(d.values()))",
+  "o": [
+   "[2, 5, 7]",
+   "[2, 5, 10]",
+   "['a', 'b', 'c']",
+   "[5, 2, 7]"
+  ],
+  "a": "[2, 5, 7]",
+  "e": "The new key c holds 7. sorted(d.values()) lists the values in order: [2, 5, 7].",
+  "h": "Values, not keys.",
+  "w": 3,
+  "id": "PY-241"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "easy",
+  "q": "What will this code print?",
+  "code": "ip = \"15.175.101.144\"\nprint(ip.split(\".\")[0])",
+  "o": [
+   "15",
+   "175",
+   "101",
+   "144"
+  ],
+  "a": "15",
+  "e": "split(\".\") gives the four parts of the address; index 0 is 15.",
+  "h": "Indexes start at 0.",
+  "w": 4,
+  "id": "PY-242"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(10) if x % 4 == 0])",
+  "o": [
+   "[0, 4, 8]",
+   "[1, 5, 9]",
+   "[0, 4, 8, 12]",
+   "[0, 1, 2, 3]"
+  ],
+  "a": "[0, 4, 8]",
+  "e": "It keeps the values below 10 whose remainder when divided by 4 is 0.",
+  "h": "Check the remainder.",
+  "id": "PY-243"
+ },
+ {
+  "t": "po",
+  "topic": "lists",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print([x for x in range(8) if x % 2 == 1])",
+  "o": [
+   "[1, 3, 5, 7]",
+   "[0, 2, 4, 6]",
+   "[1, 3, 5, 7, 9]",
+   "[2, 3]"
+  ],
+  "a": "[1, 3, 5, 7]",
+  "e": "It keeps the values below 8 whose remainder when divided by 2 is 1.",
+  "h": "Check the remainder.",
+  "id": "PY-244"
+ },
+ {
+  "t": "po",
+  "topic": "IP addressing",
+  "d": "hard",
+  "q": "What will this code print?",
+  "code": "print(8 & 252)",
+  "o": [
+   "8",
+   "252",
+   "244",
+   "9"
+  ],
+  "a": "8",
+  "e": "& keeps only the bits that are set in both numbers: 8 & 252 = 8.",
+  "h": "Think in binary.",
+  "w": 4,
+  "id": "PY-245"
+ },
+ {
+  "t": "po",
+  "topic": "binary search",
+  "d": "expert",
+  "q": "What will this code print?",
+  "code": "a = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75]\nt = 12\nlo, hi, steps = 0, len(a) - 1, 0\nwhile lo <= hi:\n    steps += 1\n    mid = (lo + hi) // 2\n    if a[mid] == t:\n        break\n    elif a[mid] < t:\n        lo = mid + 1\n    else:\n        hi = mid - 1\nprint(steps)",
+  "o": [
+   "5",
+   "6",
+   "4",
+   "7"
+  ],
+  "a": "5",
+  "e": "Binary search halves the range each time. Finding 12 takes 5 step(s).",
+  "h": "Trace lo, hi and mid.",
+  "w": 5,
+  "id": "PY-246"
+ },
+ {
+  "t": "fb",
+  "topic": "type conversion",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "print(int(\"one\"))",
+  "o": [
+   "ValueError",
+   "ZeroDivisionError",
+   "SyntaxError",
+   "KeyError"
+  ],
+  "a": "ValueError",
+  "e": "The value has the right type but cannot be converted, so Python raises ValueError.",
+  "h": "Can that text become a number?",
+  "id": "PY-247"
+ },
+ {
+  "t": "fb",
+  "topic": "type errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "total = \"9\" + 2\nprint(total)",
+  "o": [
+   "TypeError",
+   "ZeroDivisionError",
+   "KeyError",
+   "IndexError"
+  ],
+  "a": "TypeError",
+  "e": "The operation mixes types that cannot be combined, so Python raises TypeError.",
+  "h": "Look at the types.",
+  "id": "PY-248"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "items = [0, 1, 2, 3]\nprint(items[5])",
+  "o": [
+   "IndexError",
+   "ZeroDivisionError",
+   "AttributeError",
+   "ValueError"
+  ],
+  "a": "IndexError",
+  "e": "The index is outside the list, so Python raises IndexError.",
+  "h": "Count the items.",
+  "id": "PY-249"
+ },
+ {
+  "t": "fb",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "scores = {\"a\": 9}\nprint(scores[\"z\"])",
+  "o": [
+   "KeyError",
+   "AttributeError",
+   "IndexError",
+   "IndentationError"
+  ],
+  "a": "KeyError",
+  "e": "The key is not in the dictionary, so Python raises KeyError.",
+  "h": "Is that key in the dictionary?",
+  "id": "PY-250"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "items = [0, 1, 2]\nprint(items[3])",
+  "o": [
+   "IndexError",
+   "SyntaxError",
+   "AttributeError",
+   "ZeroDivisionError"
+  ],
+  "a": "IndexError",
+  "e": "The index is outside the list, so Python raises IndexError.",
+  "h": "Count the items.",
+  "id": "PY-251"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "x = 6\nprint(x / (x - 6))",
+  "o": [
+   "ZeroDivisionError",
+   "IndentationError",
+   "ValueError",
+   "NameError"
+  ],
+  "a": "ZeroDivisionError",
+  "e": "Dividing by zero raises ZeroDivisionError.",
+  "h": "What is the divisor?",
+  "id": "PY-252"
+ },
+ {
+  "t": "fb",
+  "topic": "variable errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "count = 3\nprint(coutn + 1)",
+  "o": [
+   "NameError",
+   "IndexError",
+   "TypeError",
+   "ValueError"
+  ],
+  "a": "NameError",
+  "e": "The name was never defined, so Python raises NameError.",
+  "h": "Compare the names.",
+  "id": "PY-253"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "word = \"code\"\nword.append(\"z\")",
+  "o": [
+   "AttributeError",
+   "NameError",
+   "KeyError",
+   "ValueError"
+  ],
+  "a": "AttributeError",
+  "e": "That object has no such method, so Python raises AttributeError.",
+  "h": "Does a string have that method?",
+  "id": "PY-254"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "items = [0, 1, 2, 3, 4]\nprint(items[7])",
+  "o": [
+   "IndexError",
+   "TypeError",
+   "KeyError",
+   "IndentationError"
+  ],
+  "a": "IndexError",
+  "e": "The index is outside the list, so Python raises IndexError.",
+  "h": "Count the items.",
+  "id": "PY-255"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "x = 5\nprint(x / (x - 5))",
+  "o": [
+   "ZeroDivisionError",
+   "TypeError",
+   "NameError",
+   "KeyError"
+  ],
+  "a": "ZeroDivisionError",
+  "e": "Dividing by zero raises ZeroDivisionError.",
+  "h": "What is the divisor?",
+  "id": "PY-256"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "items = [0, 1, 2, 3, 4]\nprint(items[6])",
+  "o": [
+   "IndexError",
+   "KeyError",
+   "TypeError",
+   "ZeroDivisionError"
+  ],
+  "a": "IndexError",
+  "e": "The index is outside the list, so Python raises IndexError.",
+  "h": "Count the items.",
+  "id": "PY-257"
+ },
+ {
+  "t": "fb",
+  "topic": "indentation",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "for i in range(3):\nprint(i)",
+  "o": [
+   "IndentationError",
+   "KeyError",
+   "TypeError",
+   "AttributeError"
+  ],
+  "a": "IndentationError",
+  "e": "The block is not indented, so Python raises IndentationError.",
+  "h": "Check the spacing.",
+  "id": "PY-258"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "x = 4\nprint(x / (x - 4))",
+  "o": [
+   "ZeroDivisionError",
+   "KeyError",
+   "SyntaxError",
+   "AttributeError"
+  ],
+  "a": "ZeroDivisionError",
+  "e": "Dividing by zero raises ZeroDivisionError.",
+  "h": "What is the divisor?",
+  "id": "PY-259"
+ },
+ {
+  "t": "fb",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "scores = {\"a\": 5}\nprint(scores[\"y\"])",
+  "o": [
+   "KeyError",
+   "IndentationError",
+   "NameError",
+   "IndexError"
+  ],
+  "a": "KeyError",
+  "e": "The key is not in the dictionary, so Python raises KeyError.",
+  "h": "Is that key in the dictionary?",
+  "id": "PY-260"
+ },
+ {
+  "t": "fb",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "scores = {\"a\": 8}\nprint(scores[\"y\"])",
+  "o": [
+   "KeyError",
+   "AttributeError",
+   "NameError",
+   "ValueError"
+  ],
+  "a": "KeyError",
+  "e": "The key is not in the dictionary, so Python raises KeyError.",
+  "h": "Is that key in the dictionary?",
+  "id": "PY-261"
+ },
+ {
+  "t": "fb",
+  "topic": "indentation",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "for i in range(4):\nprint(i)",
+  "o": [
+   "IndentationError",
+   "ValueError",
+   "KeyError",
+   "AttributeError"
+  ],
+  "a": "IndentationError",
+  "e": "The block is not indented, so Python raises IndentationError.",
+  "h": "Check the spacing.",
+  "id": "PY-262"
+ },
+ {
+  "t": "fb",
+  "topic": "syntax",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "if 3 > 6\n    print('big')",
+  "o": [
+   "SyntaxError",
+   "TypeError",
+   "ZeroDivisionError",
+   "ValueError"
+  ],
+  "a": "SyntaxError",
+  "e": "The code is not valid Python syntax, so it fails with SyntaxError before running.",
+  "h": "Check the punctuation.",
+  "id": "PY-263"
+ },
+ {
+  "t": "fb",
+  "topic": "type errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "total = \"5\" + 5\nprint(total)",
+  "o": [
+   "TypeError",
+   "IndentationError",
+   "ZeroDivisionError",
+   "KeyError"
+  ],
+  "a": "TypeError",
+  "e": "The operation mixes types that cannot be combined, so Python raises TypeError.",
+  "h": "Look at the types.",
+  "id": "PY-264"
+ },
+ {
+  "t": "fb",
+  "topic": "variable errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "count = 7\nprint(coutn + 1)",
+  "o": [
+   "NameError",
+   "SyntaxError",
+   "TypeError",
+   "IndexError"
+  ],
+  "a": "NameError",
+  "e": "The name was never defined, so Python raises NameError.",
+  "h": "Compare the names.",
+  "id": "PY-265"
+ },
+ {
+  "t": "fb",
+  "topic": "syntax",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "if 3 > 7\n    print('big')",
+  "o": [
+   "SyntaxError",
+   "AttributeError",
+   "ValueError",
+   "KeyError"
+  ],
+  "a": "SyntaxError",
+  "e": "The code is not valid Python syntax, so it fails with SyntaxError before running.",
+  "h": "Check the punctuation.",
+  "id": "PY-266"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "items = [0, 1, 2, 3]\nprint(items[6])",
+  "o": [
+   "IndexError",
+   "SyntaxError",
+   "IndentationError",
+   "NameError"
+  ],
+  "a": "IndexError",
+  "e": "The index is outside the list, so Python raises IndexError.",
+  "h": "Count the items.",
+  "id": "PY-267"
+ },
+ {
+  "t": "fb",
+  "topic": "syntax",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "if 4 > 1\n    print('big')",
+  "o": [
+   "SyntaxError",
+   "NameError",
+   "TypeError",
+   "IndexError"
+  ],
+  "a": "SyntaxError",
+  "e": "The code is not valid Python syntax, so it fails with SyntaxError before running.",
+  "h": "Check the punctuation.",
+  "id": "PY-268"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "x = 9\nprint(x / (x - 9))",
+  "o": [
+   "ZeroDivisionError",
+   "NameError",
+   "ValueError",
+   "IndexError"
+  ],
+  "a": "ZeroDivisionError",
+  "e": "Dividing by zero raises ZeroDivisionError.",
+  "h": "What is the divisor?",
+  "id": "PY-269"
+ },
+ {
+  "t": "fb",
+  "topic": "dictionaries",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "scores = {\"a\": 6}\nprint(scores[\"y\"])",
+  "o": [
+   "KeyError",
+   "ZeroDivisionError",
+   "AttributeError",
+   "IndentationError"
+  ],
+  "a": "KeyError",
+  "e": "The key is not in the dictionary, so Python raises KeyError.",
+  "h": "Is that key in the dictionary?",
+  "id": "PY-270"
+ },
+ {
+  "t": "fb",
+  "topic": "runtime errors",
+  "d": "medium",
+  "q": "Which error does this code raise?",
+  "code": "items = [0, 1, 2, 3]\nprint(items[4])",
+  "o": [
+   "IndexError",
+   "AttributeError",
+   "ZeroDivisionError",
+   "SyntaxError"
+  ],
+  "a": "IndexError",
+  "e": "The index is outside the list, so Python raises IndexError.",
+  "h": "Count the items.",
+  "id": "PY-271"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 21.",
+  "code": "x = 7\nx ____ 3\nprint(x)",
+  "o": [
+   "*=",
+   "+=",
+   "-=",
+   "//="
+  ],
+  "a": "*=",
+  "e": "7 *= 3 gives 21.",
+  "h": "Try each operator.",
+  "id": "PY-272"
+ },
+ {
+  "t": "cc",
+  "topic": "slicing",
+  "d": "medium",
+  "q": "Fill the slice so the code prints th.",
+  "code": "s = \"python\"\nprint(s[____])",
+  "o": [
+   "2:4",
+   "2:5",
+   "1:4",
+   "3:6"
+  ],
+  "a": "2:4",
+  "e": "s[2:4] gives th.",
+  "h": "The end index is excluded.",
+  "id": "PY-273"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 0.",
+  "code": "x = 3\nx ____ 4\nprint(x)",
+  "o": [
+   "//=",
+   "+=",
+   "-=",
+   "*="
+  ],
+  "a": "//=",
+  "e": "3 //= 4 gives 0.",
+  "h": "Try each operator.",
+  "id": "PY-274"
+ },
+ {
+  "t": "cc",
+  "topic": "strings",
+  "d": "medium",
+  "q": "Fill the blank so the code prints python.",
+  "code": "s = \"python\"\nprint(s.____())",
+  "o": [
+   "lower",
+   "upper",
+   "title",
+   "capitalize"
+  ],
+  "a": "lower",
+  "e": "lower() returns python.",
+  "h": "Pick the method that changes the case.",
+  "id": "PY-275"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 2.",
+  "code": "x = 5\nx ____ 3\nprint(x)",
+  "o": [
+   "-=",
+   "+=",
+   "*=",
+   "//="
+  ],
+  "a": "-=",
+  "e": "5 -= 3 gives 2.",
+  "h": "Try each operator.",
+  "id": "PY-276"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 8.",
+  "code": "x = 4\nx ____ 4\nprint(x)",
+  "o": [
+   "+=",
+   "-=",
+   "*=",
+   "//="
+  ],
+  "a": "+=",
+  "e": "4 += 4 gives 8.",
+  "h": "Try each operator.",
+  "id": "PY-277"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 2.",
+  "code": "print(____([9, 5, 8, 2]))",
+  "o": [
+   "min",
+   "sum",
+   "max",
+   "len"
+  ],
+  "a": "min",
+  "e": "min() of that list is 2.",
+  "h": "Try each built-in.",
+  "id": "PY-278"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 7.",
+  "code": "x = 5\nx ____ 2\nprint(x)",
+  "o": [
+   "+=",
+   "-=",
+   "*=",
+   "//="
+  ],
+  "a": "+=",
+  "e": "5 += 2 gives 7.",
+  "h": "Try each operator.",
+  "id": "PY-279"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 4.",
+  "code": "print(____([3, 5, 9, 9]))",
+  "o": [
+   "len",
+   "sum",
+   "max",
+   "min"
+  ],
+  "a": "len",
+  "e": "len() of that list is 4.",
+  "h": "Try each built-in.",
+  "id": "PY-280"
+ },
+ {
+  "t": "cc",
+  "topic": "loops",
+  "d": "medium",
+  "q": "Fill the blank so the loop prints 0 1 2 3 4 5 6.",
+  "code": "for i in range(____):\n    print(i, end=\" \")",
+  "o": [
+   "7",
+   "6",
+   "8",
+   "9"
+  ],
+  "a": "7",
+  "e": "range(7) gives 0 to 6.",
+  "h": "The stop value is excluded.",
+  "id": "PY-281"
+ },
+ {
+  "t": "cc",
+  "topic": "strings",
+  "d": "medium",
+  "q": "Fill the blank so the code prints code.",
+  "code": "s = \"code\"\nprint(s.____())",
+  "o": [
+   "lower",
+   "upper",
+   "title",
+   "capitalize"
+  ],
+  "a": "lower",
+  "e": "lower() returns code.",
+  "h": "Pick the method that changes the case.",
+  "id": "PY-282"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 3.",
+  "code": "print(____([9, 3, 9, 4]))",
+  "o": [
+   "min",
+   "sum",
+   "max",
+   "len"
+  ],
+  "a": "min",
+  "e": "min() of that list is 3.",
+  "h": "Try each built-in.",
+  "id": "PY-283"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 9.",
+  "code": "print(____([6, 6, 7, 9]))",
+  "o": [
+   "max",
+   "sum",
+   "min",
+   "len"
+  ],
+  "a": "max",
+  "e": "max() of that list is 9.",
+  "h": "Try each built-in.",
+  "id": "PY-284"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 5.",
+  "code": "print(____([1, 1, 5, 5]))",
+  "o": [
+   "max",
+   "sum",
+   "min",
+   "len"
+  ],
+  "a": "max",
+  "e": "max() of that list is 5.",
+  "h": "Try each built-in.",
+  "id": "PY-285"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 9.",
+  "code": "print(____([8, 9, 1, 5]))",
+  "o": [
+   "max",
+   "sum",
+   "min",
+   "len"
+  ],
+  "a": "max",
+  "e": "max() of that list is 9.",
+  "h": "Try each built-in.",
+  "id": "PY-286"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 4.",
+  "code": "print(____([6, 9, 2, 8]))",
+  "o": [
+   "len",
+   "sum",
+   "max",
+   "min"
+  ],
+  "a": "len",
+  "e": "len() of that list is 4.",
+  "h": "Try each built-in.",
+  "id": "PY-287"
+ },
+ {
+  "t": "cc",
+  "topic": "strings",
+  "d": "medium",
+  "q": "Fill the blank so the code prints NEURAL.",
+  "code": "s = \"neural\"\nprint(s.____())",
+  "o": [
+   "upper",
+   "lower",
+   "title",
+   "capitalize"
+  ],
+  "a": "upper",
+  "e": "upper() returns NEURAL.",
+  "h": "Pick the method that changes the case.",
+  "id": "PY-288"
+ },
+ {
+  "t": "cc",
+  "topic": "built-in functions",
+  "d": "medium",
+  "q": "Fill the built-in function so the code prints 11.",
+  "code": "print(____([1, 8, 1, 1]))",
+  "o": [
+   "sum",
+   "max",
+   "min",
+   "len"
+  ],
+  "a": "sum",
+  "e": "sum() of that list is 11.",
+  "h": "Try each built-in.",
+  "id": "PY-289"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 28.",
+  "code": "x = 7\nx ____ 4\nprint(x)",
+  "o": [
+   "*=",
+   "+=",
+   "-=",
+   "//="
+  ],
+  "a": "*=",
+  "e": "7 *= 4 gives 28.",
+  "h": "Try each operator.",
+  "id": "PY-290"
+ },
+ {
+  "t": "cc",
+  "topic": "operators",
+  "d": "medium",
+  "q": "Fill the operator so the code prints 7.",
+  "code": "x = 9\nx ____ 2\nprint(x)",
+  "o": [
+   "-=",
+   "+=",
+   "*=",
+   "//="
+  ],
+  "a": "-=",
+  "e": "9 -= 2 gives 7.",
+  "h": "Try each operator.",
+  "id": "PY-291"
+ },
+ {
+  "t": "lp",
+  "topic": "trees",
+  "d": "medium",
+  "q": "What is the maximum number of children of a node in a binary tree?",
+  "code": "",
+  "o": [
+   "2",
+   "1",
+   "3",
+   "4"
+  ],
+  "a": "2",
+  "e": "A binary tree node has at most two children.",
+  "h": "Bi means two.",
+  "w": 5,
+  "id": "PY-292"
+ },
+ {
+  "t": "lp",
+  "topic": "graphs",
+  "d": "medium",
+  "q": "Which traversal explores a graph as deep as possible before backtracking?",
+  "code": "",
+  "o": [
+   "Depth-first search",
+   "Breadth-first search",
+   "Binary search",
+   "Bubble sort"
+  ],
+  "a": "Depth-first search",
+  "e": "DFS follows one path to its end before returning.",
+  "h": "Think of a stack.",
+  "w": 5,
+  "id": "PY-293"
+ },
+ {
+  "t": "lp",
+  "topic": "complexity",
+  "d": "medium",
+  "q": "What is the time complexity of accessing a list item by index?",
+  "code": "",
+  "o": [
+   "O(1)",
+   "O(n)",
+   "O(log n)",
+   "O(n squared)"
+  ],
+  "a": "O(1)",
+  "e": "Indexing jumps straight to the position.",
+  "h": "No searching needed.",
+  "w": 5,
+  "id": "PY-294"
+ },
+ {
+  "t": "lp",
+  "topic": "hash maps",
+  "d": "medium",
+  "q": "What does a hash map use to find where a key is stored?",
+  "code": "",
+  "o": [
+   "A hash function",
+   "A sorted list",
+   "A binary tree",
+   "A queue"
+  ],
+  "a": "A hash function",
+  "e": "A hash function turns the key into a position.",
+  "h": "Hashing.",
+  "w": 5,
+  "id": "PY-295"
+ },
+ {
+  "t": "lp",
+  "topic": "stacks",
+  "d": "easy",
+  "q": "Which operation adds an item to the top of a stack?",
+  "code": "",
+  "o": [
+   "push",
+   "pop",
+   "peek",
+   "clear"
+  ],
+  "a": "push",
+  "e": "push places a new item on top.",
+  "h": "Opposite of pop.",
+  "w": 5,
+  "id": "PY-296"
+ },
+ {
+  "t": "lp",
+  "topic": "queues",
+  "d": "easy",
+  "q": "Which end of a queue do items leave from?",
+  "code": "",
+  "o": [
+   "The front",
+   "The back",
+   "The middle",
+   "Either end"
+  ],
+  "a": "The front",
+  "e": "A queue serves the oldest item first, from the front.",
+  "h": "FIFO.",
+  "w": 5,
+  "id": "PY-297"
+ },
+ {
+  "t": "lp",
+  "topic": "HTTP",
+  "d": "medium",
+  "q": "Which HTTP status code family means a server error?",
+  "code": "",
+  "o": [
+   "5xx",
+   "2xx",
+   "3xx",
+   "4xx"
+  ],
+  "a": "5xx",
+  "e": "5xx codes mean the server failed to handle the request.",
+  "h": "Not the client.",
+  "w": 4,
+  "id": "PY-298"
+ },
+ {
+  "t": "lp",
+  "topic": "DNS",
+  "d": "easy",
+  "q": "What does DNS stand for?",
+  "code": "",
+  "o": [
+   "Domain Name System",
+   "Data Network Service",
+   "Digital Name Server",
+   "Domain Number Standard"
+  ],
+  "a": "Domain Name System",
+  "e": "DNS is the Domain Name System.",
+  "h": "Names to addresses.",
+  "w": 4,
+  "id": "PY-299"
+ },
+ {
+  "t": "lp",
+  "topic": "IP addressing",
+  "d": "medium",
+  "q": "How many bits are in an IPv4 address?",
+  "code": "",
+  "o": [
+   "32",
+   "16",
+   "64",
+   "128"
+  ],
+  "a": "32",
+  "e": "An IPv4 address has 32 bits, shown as four numbers.",
+  "h": "Four bytes.",
+  "w": 4,
+  "id": "PY-300"
+ }
+]

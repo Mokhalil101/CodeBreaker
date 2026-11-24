@@ -1,0 +1,68 @@
+[
+ {
+  "id": "world-01",
+  "name": "Neon City",
+  "levels": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "world-02",
+  "name": "The Bug Factory",
+  "levels": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ]
+ },
+ {
+  "id": "world-03",
+  "name": "Data Core",
+  "levels": [
+   11,
+   12,
+   13,
+   14,
+   15
+  ]
+ },
+ {
+  "id": "world-04",
+  "name": "Network Zero",
+  "levels": [
+   16,
+   17,
+   18,
+   19,
+   20
+  ]
+ },
+ {
+  "id": "world-05",
+  "name": "Neural Nightmare",
+  "levels": [
+   21,
+   22,
+   23,
+   24,
+   25
+  ]
+ },
+ {
+  "id": "world-06",
+  "name": "Overlord Core",
+  "levels": [
+   26,
+   27,
+   28,
+   29,
+   30
+  ]
+ }
+]

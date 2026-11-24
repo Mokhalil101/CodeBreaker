@@ -1,0 +1,13 @@
+import {JSDOM} from 'jsdom';import fs from 'fs';
+const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{url:'http://localhost/',runScripts:'dangerously',beforeParse(w){w.requestAnimationFrame=()=>0;w.HTMLCanvasElement.prototype.getContext=()=>({});w.AudioContext=function(){}}});
+const w=dom.window,res=[];const ok=(n,c)=>res.push([n,!!c]);
+const setup=(dx=0)=>w.eval(`startLevel(0);mode='play';const t=lv.tm[0];p.x=t.x-${dx};p.y=t.y;p.vx=p.vy=0;cam=Math.max(0,t.x-300);`);
+const mode=()=>w.eval('mode'),reset=()=>w.eval("ov.style.display='none';mode='play'");
+setup(40);w.eval('tapTerm(lv.tm[0].x-cam+16,lv.tm[0].y+16)');ok('clicking/tapping the terminal opens the question when you stand next to it',mode()=='chal');
+setup(40);w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'e',code:'KeyE'}));ok('E key opens it',mode()=='chal');
+setup(40);w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'\u062b',code:'KeyE'}));ok('E key still works on an Arabic keyboard layout',mode()=='chal');
+setup(40);w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Enter',code:'Enter'}));ok('Enter opens it',mode()=='chal');
+setup(400);w.eval('tapTerm(lv.tm[0].x-cam+16,lv.tm[0].y+16)');ok('clicking a far terminal does not open it and shows a hint',mode()=='play'&&w.document.querySelector('#toast').textContent.includes('closer'));
+setup(40);w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'\u0634',code:'KeyA'}));ok('A (Arabic layout) moves left',w.eval('K.l')==1);
+w.dispatchEvent(new w.KeyboardEvent('keyup',{key:'\u0634',code:'KeyA'}));ok('and stops on key release',w.eval('K.l')==0);
+res.forEach(([n,v])=>console.log(v?'OK   ':'FAILS',n));process.exit(res.every(r=>r[1])?0:1);

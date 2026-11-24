@@ -1,0 +1,22 @@
+import {JSDOM} from 'jsdom';import fs from 'fs';
+const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{url:'http://localhost/',runScripts:'dangerously',beforeParse(w){w.requestAnimationFrame=()=>0;w.HTMLCanvasElement.prototype.getContext=()=>({});w.AudioContext=function(){}}});
+const w=dom.window,QB=JSON.parse(w.eval('JSON.stringify(QB)')),LV=JSON.parse(w.eval('JSON.stringify(LV)'));
+const err=[],T=['po','fb','cc','lp'],D=['easy','medium','hard','expert'],seen=new Set();
+QB.forEach((q,i)=>{q.id='PY-'+String(i+1).padStart(3,'0');const p=q.id+': ';
+if(!T.includes(q.t))err.push(p+'bad type');if(!D.includes(q.d))err.push(p+'bad difficulty');
+if(!q.q||!q.e||!q.h)err.push(p+'missing text/explanation/hint');
+if(!q.o||q.o.length<2||!q.o.includes(q.a))err.push(p+'answer not in options');
+if(new Set(q.o).size!==q.o.length)err.push(p+'duplicate options');
+const k=q.q+'|'+q.code;if(seen.has(k))err.push(p+'duplicate question');seen.add(k)});
+LV.forEach((l,i)=>{const p='Level '+(i+1)+' '+l.n+': ',c=l.c.map(x=>x[0]);
+if(!c.includes('p'))err.push(p+'no start');if(!c.includes('e'))err.push(p+'no exit');
+const t=l.c.filter(x=>x[0]=='t').map(x=>x[3]),g=l.c.filter(x=>x[0]=='g').map(x=>x[4]);
+g.forEach(id=>{if(!t.includes(id))err.push(p+'gate '+id+' has no terminal')});
+const sup=l.c.filter(x=>['r','v','c','b'].includes(x[0])&&x[2]==12).map(x=>[x[1],x[1]+x[3]]).sort((a,b)=>a[0]-b[0]);let end=sup.length?sup[0][1]:0;
+for(const [a,b] of sup){if(a-end>5)err.push(p+'gap of '+(a-end)+' tiles at x='+end);end=Math.max(end,b)}
+const ids=new Set(l.c.filter(x=>x[0]=='t').map(x=>x[3]));if(l.boss&&ids.size!==1)err.push(p+'boss needs one terminal');
+if(l.boss&&!c.includes('B'))err.push(p+'boss level without boss')});
+fs.writeFileSync('data/questions.json',JSON.stringify(QB,null,1));
+const by={};QB.forEach(q=>by[q.t]=(by[q.t]||0)+1);
+console.log('questions:',QB.length,by,'| levels:',LV.length,'| errors:',err.length);err.forEach(e=>console.log(' -',e));
+process.exit(err.length?1:0);
