@@ -26,6 +26,9 @@ After a boss stun ends (or the boss is hit) the terminal recharges for 5 seconds
 ## Systems
 300 questions (about 40% handwritten, the rest generated from templates and verified by executing the Python), 3 vertical tower levels with a scrolling camera, dialogue scenes for every world, boss and ending, save slots (3) with copy/paste export and import, credits, world map and level select, key rebinding, text size, high contrast, hidden data files with story records, timed escape levels.
 
+## Gamepad and screens
+PlayStation (DualShock / DualSense) and other standard controllers work next to the keyboard: left stick or D-pad move, Cross jump, Square or R1 dash, Circle or Triangle hack, Options pause; in menus D-pad + Cross, Circle back. Vibration on death and boss hits (Settings can turn it off). The canvas scales to any window, keeps the 800x448 aspect ratio and renders at the device resolution (up to 2.2x). The fullscreen button (top right, also in Settings) uses the Fullscreen API; on iPhone use Add to Home Screen. Phones in portrait get a rotate hint.
+
 ## Controls
 A/D or arrows move, Space jump (hold = higher; double jump, wall jump, wall run by holding jump against a wall, auto vault over 1-tile steps and ledge climb, roll after a hard landing), S slide, Shift dash, E, Enter or a click/tap on the terminal hacks it (letter keys also work on an Arabic keyboard layout), Esc pause. Touch buttons appear on mobile.
 
